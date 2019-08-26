@@ -227,11 +227,13 @@ h2{
   
 }
 @media (max-width: 768px){
+
     .toggle-menu{
         display: block;
     }
     .phone-main{
-        display: none;
+      /* padding-right: 28%; */
+      width: 90%;
     }
     .header-heading{
         margin: 0;
