@@ -4,6 +4,7 @@ text-align: center;
 
 ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     list-style: none;
 }
@@ -12,20 +13,25 @@ li {
     text-align: center;
     width: 250px;
     height: 250px;
-    margin: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 a {
     font-size: 20px;
     text-decoration: none;
 }
-.cherry-markup:hover {
+a:hover {
     box-shadow: -1px 10px 27px -3px rgba(0,0,0,0.41);
 }
 .cherry-markup {
+    background-color: black;
     width: 250px;
     border-style: none;
 }
+
+
  .temporary {
      border: 2px solid lightgray;
+     background-image: url("jpg/under construction.jpg")
  }
