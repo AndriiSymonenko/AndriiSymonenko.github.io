@@ -1,10 +1,10 @@
 @font-face{
     font-family: 'Open Sans';
-    src: url("../fonts/OpenSans-Regular.ttf") format('truetype');
+    src: url("../fonts/OpenSans-Regular.woff") format('woff');
 }
 @font-face{
     font-family: 'LobsterTwo';
-    src: url("../fonts/LobsterTwo-Regular.ttf") format('truetype');
+    src: url("../fonts/LobsterTwo.woff") format('woff');
 }
 *{
     margin: 0;
