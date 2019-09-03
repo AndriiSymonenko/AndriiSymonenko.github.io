@@ -75,7 +75,7 @@ float: left;
    margin-top: 20px;
    margin-left: 0px;
 }
-.search_bar{
+.search_bar {
     float: left;
     border-style: solid;
     border-width: 1px;
@@ -90,7 +90,8 @@ float: left;
     position: relative;
     color: #a5adb8;
 }
-.search_btn{
+.search_btn {
+    cursor: pointer;
     float: right;
     width: 36px;
     height: 34px;
@@ -356,6 +357,11 @@ min-height: 35px;
         margin-bottom: 15px;
         padding: 10px 10px 10px;
     }
+
+    .contact_btn {
+        cursor: pointer;
+    }
+
     .contact_us .contact_btn{
         border-style: solid;
         border-width: 5px;
