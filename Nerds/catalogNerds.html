@@ -29,7 +29,64 @@
     <main class="container">
         <section class="filter">
             <h2 class="visually-hidden">Фильтр товаров</h2>
-            <!-- Здесь будет форма -->
+            <form class="filter" action="#" method="GET">
+              <fieldset>
+                  <legend>Стоимость:</legend>
+                  <!-- Здесь будет range-selector -->
+              </fieldset>
+              <fieldset>
+                  <legend>Сетка:</legend>
+                  <ul>
+                      <li class="filter-option">
+                          <input class="visually-hidden filter-input filter-input-radio"
+                           type="radio" name="grid" id="filter-adaptiv" checked>
+                           <label for="filter-adaptiv">Адаптивная</label>
+                      </li>
+                      <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-radio"
+                         type="radio" name="grid" id="filter-fixed">
+                         <label for="filter-fixed">Фиксированная</label>
+                    </li>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-radio"
+                         type="radio" name="grid" id="filter-rubber">
+                         <label for="filter-rubber">Резиновая</label>
+                    </li>
+                  </ul>
+              </fieldset>
+
+              <fieldset>
+                  <legend>Особенности:</legend>
+                  <ul>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                         name="slider" id="filter-slider" checked>
+                         <label for="filter-slider">Слайдер</label>
+                    </li>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                         name="advantages" id="filter-advantages">
+                         <label for="filter-advantages">Блок преимуществ</label>
+                    </li>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                         name="news" id="filter-news" checked>
+                         <label for="filter-news">Новости</label>
+                    </li>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                         name="gallery" id="filter-gallery">
+                         <label for="filter-news">Галерея</label>
+                    </li>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                         name="basket" id="filter-basket">
+                         <label for="filter-basket">Корзина</label>
+                    </li>
+                  </ul>
+              </fieldset>
+              <button type="submit" class="filter-button button">Показать</button>
+            </form>
         </section>
         <section class="catalog-template">
             <h2 class="visually-hidden">Каталог шаблонов</h2>
