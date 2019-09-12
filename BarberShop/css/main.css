@@ -66,7 +66,7 @@ a {
     color: #ffffff;
 }
 
-site-navigation a:hover,
+.site-navigation a:hover,
 .site-navigation a:focus,
 .user-navigation a:hover,
 .user-navigation a:focus {
