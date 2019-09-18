@@ -20,6 +20,9 @@ body {
     background-repeat: no-repeat;
 }
 
+
+
+
 .inner-page {
     color: #000000;
     background-color: #f9f6f3;
@@ -187,7 +190,7 @@ a {
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
-
+    margin-bottom: 25px;
     list-style: none;
 }
 
@@ -223,7 +226,7 @@ a {
     font-size: 14px;
     line-height: 20px;
     text-align: center;
-
+    
     background-color: #e5e5e5;
 }
 
@@ -233,7 +236,19 @@ a {
 }
 
 .pagination-list {
+    padding: 0;
+    margin: 0;
+
     list-style: none;
+}
+
+
+.product-photo {
+    width: 460px;
+}
+
+.product-info {
+    width: 390px;
 }
 
 .pagination-item a {
@@ -301,6 +316,11 @@ a {
     background-position: 0 0;
     background-repeat: repeat;
 }
+
+.inner-page .main-footer {
+    margin-top: 45px;
+}
+
 .fotter-contact a {
     color: #ffffff;
     text-decoration: underline;
