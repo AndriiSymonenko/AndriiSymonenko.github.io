@@ -111,5 +111,49 @@ a {
     color: #a6a6a6;
 }
 
+.product-service {
+  font-size: 16px;
+}
 
+.product-service h3 {
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+.service-list {
+    list-style: none;
+    display: flex;
+}
+
+
+.service-item {
+    width: 300px;
+    margin-right: 100px;
+}
+
+.app-button {
+    background-color: #00ca74;
+}
+
+.app-button:hover {
+    background-color: #00bc6c
+}
+
+.app-button:focus,
+.app-button:active {
+    background-color: #00aa62;
+}
  
+.presentations-button {
+    background-color: #efc84a;
+}
+.presentations-button:hover {
+    background-color: #eab534
+}
+
+.presentations-button:focus,
+.presentations-button:active {
+    background-color: #e5a722;
+}
+
