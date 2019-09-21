@@ -41,6 +41,7 @@ a {
 .slider {
     position: relative;
     background-color: #eeeeee;
+    margin-bottom: 80px;
 }
 
 .slider-list { 
@@ -113,6 +114,7 @@ a {
 
 .product-service {
   font-size: 16px;
+  margin-bottom: 80px;
 }
 
 .product-service h3 {
@@ -124,6 +126,7 @@ a {
 .service-list {
     list-style: none;
     display: flex;
+    padding:0;
 }
 
 
@@ -157,3 +160,47 @@ a {
     background-color: #e5a722;
 }
 
+.about-us {
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.specialization {
+    width: 660px;
+    padding: 0;
+    margin:0;
+    margin-right: 140px;
+}
+
+.about-us-title {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 500;
+}
+
+.about-us-list {
+    list-style: none;
+}
+
+.advantages {
+    width: 400px;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.project-list li {
+    width: 260px;
+    margin-right: 20px; /* fix */
+}
+
+.project-list a {
+    opacity: 0.2;
+}
+
+.project-list a:hover {
+    opacity: 1;
+}
