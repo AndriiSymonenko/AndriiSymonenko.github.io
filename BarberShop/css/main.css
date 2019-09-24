@@ -35,7 +35,30 @@ a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .button {
+    display: inline-block;
+    padding: 10px 30px;
+    margin-right: 16px;
     font: inherit;
     text-align: center;
     color: #ffffff;
@@ -52,6 +75,13 @@ a {
     background-color: #663d15;
 }
 
+.button.disabled,
+.button:disabled {
+    cursor: default;
+    opacity: 0.5;
+    background-color: #000000;
+}
+
 .main-navigation {
     font-size: 16px;
     line-height: 20px;
@@ -66,8 +96,13 @@ a {
 
 .site-navigation a,
 .user-navigation a {
+    display: block;
+    padding: 25px 20px;
+    vertical-align: middle;
     color: #ffffff;
 }
+
+
 
 .site-navigation a:hover,
 .site-navigation a:focus,
@@ -75,6 +110,7 @@ a {
 .user-navigation a:focus {
     background-color: #242424;
 }
+
 
 .features-list {
     list-style: none;
@@ -90,33 +126,76 @@ a {
 }
 
 .index-columns {
+    display: flex;
+    padding: 50px 80px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
     color: #000000;
     background-color: #f8f5f2;
-    background-image: url("/BarberShop/img/pattern-light.jpg");
-    background-position: 0 0;
-    background-repeat: repeat;
+    background-image:
+    url("../img/line.png"),
+     url("/BarberShop/img/pattern-light.jpg");
+    background-position: center, 0 0;
+    background-repeat: no-repeat, repeat;
+} 
+
+.index-columns h2 {
+    margin:0;
+    margin-bottom: 25px;
+    padding: 0; 
 }
 
 .news-list {
     list-style: none;
 }
 
+.news-item {
+    margin-bottom: 25px;
+}
+
+.news-item p {
+    margin: 0;
+}
+
 .news-item time {
     text-transform: none;
 }
 
+.gallery-container {
+    position: relative;
+
+    height: 260px;
+}
+
 .gallery-content {
+    height: 164px;
+    margin: 0;
+
     background-color: #cccccc;
     border: 7px solid #ffffff;
 }
 
-.appointetment-item input {
-    font: inherit;
-    background-color: transparent;
-    border: 2px solid #000000;
+.gallery-content img {
+    width: 286px;
+    height: 164px;
 }
-.appointetment-item input:focus {
-    border-color: #663d15; 
+
+.gallery-button {
+    box-sizing: border-box;
+    width: 140px;
+    margin: 0;
+    position: absolute;
+
+    bottom: 0;
+}
+
+.gallery-button-back {
+    left: 0px;
+}
+
+.gallery-button-next {
+    right: 0;
 }
 
 .page-title {
@@ -441,6 +520,8 @@ a {
 
 .site-navigation {
     width: 620px;
+    display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     
@@ -450,8 +531,34 @@ a {
 
 .user-navigation {
     width: 140px;
+    display: flex;
     margin: 0;
     padding: 0;
+}
+
+.user-navigation .login-link {
+    position: relative;
+    padding-left: 50px;
+}
+
+.login-link::before {
+    position: absolute;
+    top: 27px;
+    left: 24px;
+    content: "";
+    width: 16px;
+    height: 18px;
+    background-image: url("../img/login.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    
+    opacity: 0.3;
+}
+
+.login-link:hover::before,
+.login-link:focus::before,
+.login-link:active::before {
+    opacity: 1;
 }
 
 .inner-page .user-navigation {
@@ -472,15 +579,37 @@ a {
 
 .features-item {
     width: 300px;
+    text-align: center;
 }
 
-.index-columns {
-    display: flex;
-    padding: 50px 80px;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 35px;
+.features-item h3 {
+    position: relative;
+    margin: 0;
+    margin-bottom: 50px;
+   
+    font-size: 30px;
+    line-height: 42px;
 }
+
+.features-item p {
+    margin: 0 10px;
+}
+
+.features-item h3::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    margin-left: -10px;
+    
+    width: 20px;
+    height: 20px;
+
+    background-color: #ffffff;
+
+    transform: rotate(45deg);
+} 
+
 
 .news {
     width: 380px;
@@ -494,8 +623,32 @@ a {
     width: 380px;
 }
 
+.contact p {
+    margin: 0;
+    margin-bottom: 25px;
+}
+
 .appointetment {
     width: 300px;
+}
+
+.appointetment-info {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.appointetment-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.appointetment-item input {
+    font: inherit;
+    background-color: transparent;
+    border: 2px solid #000000;
+}
+.appointetment-item input:focus {
+    border-color: #663d15; 
 }
 
 .main-footer {
