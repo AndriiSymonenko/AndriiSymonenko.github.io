@@ -400,7 +400,7 @@ input[type="radio"].visually-hidden {
     margin-top: 45px;
 }
 
-.fotter-contact a {
+.footer-contact a {
     color: #ffffff;
     text-decoration: underline;
 }
@@ -640,20 +640,45 @@ input[type="radio"].visually-hidden {
 .appointetment-form {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.appointetment-item {
+    width: 140px;
+    margin: 0; 
+    margin-bottom: 10px;
+}
+
+appointetment-item label {
+    display: block;
+    margin-bottom: 9px;
+    margin-left: 15px;
 }
 
 .appointetment-item input {
+    box-sizing: border-box;
+    width: 140px;
+    padding: 8px 15px 7px 15px;
     font: inherit;
     background-color: transparent;
     border: 2px solid #000000;
 }
 .appointetment-item input:focus {
-    border-color: #663d15; 
+    border-color: #663d15;
+  
+}
+
+.appointetment .button {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-right: 0;  
 }
 
 .main-footer {
     padding: 60px 0;
     margin-top: 65px;
+    display: flex;
 }
 
 .main-footer .container {
@@ -666,8 +691,27 @@ input[type="radio"].visually-hidden {
     margin-right: 80px;
 }
 
+.footer-social ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0;
+    width: 141px;
+    list-style: none;
+}
+
 .footer-social {
     width: 145px;
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+    background-color: #000000;
 }
 
 .footer-copyright {
