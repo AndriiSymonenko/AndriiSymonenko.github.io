@@ -207,14 +207,20 @@ input[type="radio"].visually-hidden {
 }
 
 .breadcrumbs {
+    display: flex;
     padding: 0;
     margin: 0;
     margin-bottom: 50px;
     list-style: none;
 }
+.breadcrumbs li {
+    position: relative;
+    padding-right: 29px; 
+}
 
 .breadcrumbs a {
     color: #000000;
+ 
 }
 
 .breadcrumbs a:hover,
@@ -225,6 +231,23 @@ input[type="radio"].visually-hidden {
 .breadcrumbs-current {
     color: #aba9a7;
 }
+
+.breadcrumbs-current::after {
+    display: none;
+}
+
+.breadcrumbs li::after {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    right: 10px;
+    top: 8px;
+    background-color: #000000;
+    transform: rotate(45deg);
+}
+
+
 
 .filter {
     width: 180px;
@@ -355,15 +378,33 @@ input[type="radio"].visually-hidden {
 }
 
 .product-photo-preview {
+    display: flex;
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 
 .product-photo-preview li {
+    width: 140px;
+    height: 149px;
+    margin-right: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+.product-photo-preview li:nth-child(3n) {
+    margin-right: 0;
+}
+
 .product-photo-full {
+    width: 460px;
+    height: 498px;
+    margin: 0;
+    margin-bottom: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-info {
+    
 }
 
 .product-article {
@@ -705,6 +746,7 @@ appointetment-item label {
     width: 145px;
 }
 
+
 .social-button {
     display: flex;
     align-items: center;
@@ -714,8 +756,35 @@ appointetment-item label {
     background-color: #000000;
 }
 
+.social-button:hover,
+.social-button:active {
+    background-color: #ffffff;
+}
+
+.social-button:hover path,
+.social-button:active path {
+    fill: #000000;
+}
+
+.footer-social b {
+    display: block;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
 .footer-copyright {
     width: 150px;
     margin: 0;
     margin-left: auto;
+}
+
+.footer-copyright b {
+    display: block;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.footer-copyright .button {
+    display: block;
+    margin-right: 
 }
