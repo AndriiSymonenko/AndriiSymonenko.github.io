@@ -208,6 +208,8 @@ input[type="radio"].visually-hidden {
 
 .breadcrumbs {
     display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     padding: 0;
     margin: 0;
     margin-bottom: 50px;
@@ -215,7 +217,7 @@ input[type="radio"].visually-hidden {
 }
 .breadcrumbs li {
     position: relative;
-    padding-right: 29px; 
+    padding-right: 42px; 
 }
 
 .breadcrumbs a {
@@ -241,7 +243,7 @@ input[type="radio"].visually-hidden {
     content: "";
     width: 8px;
     height: 8px;
-    right: 10px;
+    right: 15px;
     top: 8px;
     background-color: #000000;
     transform: rotate(45deg);
@@ -254,17 +256,39 @@ input[type="radio"].visually-hidden {
 }
 
 .filter fieldset {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
     border: none;
 }
 
+.filer fieldset:first-child {
+    margin-bottom: 35px;
+}
+
 .filter legend {
+    margin-bottom: 26px;
     font-size: 24px;
     line-height: 30px;
 }
 
 .filter ul {
+    padding: 0;
+    margin: 0;
     list-style: none;
     line-height: 18px;
+}
+
+.filter-option {
+    margin-bottom: 19px;
+    padding-left: 45px;
+}
+
+.filter-option label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    user-select: none;
 }
 
 .filter-input:hover + label,
@@ -324,12 +348,24 @@ input[type="radio"].visually-hidden {
     text-transform: none;
 }
 
+.product-info .catalog-item-price {
+    margin-bottom: 30px;
+}
+
+
 .catalog-item-price b {
+    background-color: #e5e5e5;
+
+    width: 112px;
+    padding: 9px 36px 13px 36px;
+
+    line-height: 20px;
+    text-align: center;
+
+    box-sizing: border-box;
     font-size: 14px;
     line-height: 20px;
     text-align: center;
-    
-    background-color: #e5e5e5;
 }
 
 .catalog-item-price .button {
@@ -349,9 +385,6 @@ input[type="radio"].visually-hidden {
     width: 460px;
 }
 
-.product-info {
-    width: 390px;
-}
 
 .pagination-item a {
     color: #ffffff;
@@ -420,22 +453,10 @@ input[type="radio"].visually-hidden {
 }
 
 
-
-.catalog-item-price b {
-    background-color: #e5e5e5;
-
-    width: 112px;
-    padding: 13px 36px 11px 36px;
-
-    line-height: 20px;
-    text-align: center;
-
-    box-sizing: border-box;
-}
-
 .catalog-item-price .button {
     padding-left: 17px;
     padding-right: 17px;
+    margin: 0;
 }
 
 .product-info {
@@ -447,18 +468,45 @@ input[type="radio"].visually-hidden {
     margin: 0;
 }
 
-.product-info h3 {
-    font-size: 24px;
-    line-height: 30px;
-}
 
-.product-info .product-price {
+
+.product-info .catalog-item-price {
     display: flex;
     margin-bottom: 63px;
 }
 
 .product-info ul {
+    margin:0;
+    padding: 0;
     list-style: none;
+}
+
+.product-info .product-text {
+    margin-bottom: 35px;
+}
+
+.product-info h3 {
+    font-size: 24px;
+    line-height: 30px;
+    margin: 0;
+    margin-bottom: 27px;
+}
+
+.product-info li::before {
+    position: absolute;
+    top: 7px;
+    left: 2px;
+    background-color: #000000;
+    transform: rotate(45deg);
+    content: "";
+    width: 8px;
+    height: 8px;
+}
+
+.product-info li {
+    position: relative;
+
+    padding-left: 23px;
 }
 
 .main-footer {
