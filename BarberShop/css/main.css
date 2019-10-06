@@ -296,11 +296,62 @@ input[type="radio"].visually-hidden {
     color: #000000;
 }
 
+.filter-input-checkbox + label::before {
+    content: "";
+    position: absolute;
+    left: -42px;
+    top: 0;
+    width: 16px;
+    height: 16px;
+
+    border: 2px solid #000000;
+}
+
+.filter-input-checkbox:checked + label::after {
+    content: "";
+
+    position: absolute;
+    top: 4px;
+    left: -38px;
+    width: 12px;
+    height: 12px;
+
+    background-image: url("/img/cross.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.filter-input-radio + label::before {
+    content: "";
+    position: absolute;
+    left: -42px;
+    top: -1px;
+    width: 16px;
+    height: 16px;
+
+    border: 2px solid #000000;
+    border-radius: 50%;
+}
+
+.filter-input-radio:checked + label::after {
+    content: "";
+    position: absolute;
+    left: -37px;
+    top: 4px;
+    width: 10px;
+    height: 10px;
+
+    background-color: #000000;
+    border-radius: 50%;
+}
+
 .filter-input:disabled + label {
     color: #000000;
 
     opacity: 0.5;
 }
+
+/* Catalog */
 
 .catalog {
     width: 700px;
@@ -337,16 +388,53 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item a {
+    display: flex;
+    flex-direction: column;
     color: #000000;
 }
 .catalog-item h3 {
+    order: 1;
+    margin: 17px 15px 12px 16px;
     font-size: 14px;
     line-height: 18px;
 }
 
 .catalog-category {
+    display: block;
     text-transform: none;
 }
+
+.catalog-price .button {
+    line-height: 20px;
+    color: #ffffff;
+     width: 50px;
+     padding: 13px 18px 11px;
+     margin-right: 0;
+}
+
+.catalog-item-image {
+    width: 220px;
+    height: 165px;
+    margin: 0;
+}
+.catalog-price {
+    display: flex;
+    margin: 15px;
+    margin-top: 0;
+}
+
+.catalog-price b {
+    width: 112px;
+    padding: 13px 25px 11px;
+
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    background-color: #e5e5e5;
+}
+
+/* Catalog */
 
 .product-info .catalog-item-price {
     margin-bottom: 30px;
@@ -373,20 +461,21 @@ input[type="radio"].visually-hidden {
     color: #ffffff;
 }
 
+/* Paginator */
+
 .pagination-list {
+    display: flex;
+    flex-wrap: wrap;
     padding: 0;
     margin: 0;
 
     list-style: none;
 }
 
-
-.product-photo {
-    width: 460px;
-}
-
-
 .pagination-item a {
+    display: block;
+    padding: 10px 19px;
+    margin-right: 5px;
     color: #ffffff;
 
     background-color: #000000;
@@ -398,8 +487,13 @@ input[type="radio"].visually-hidden {
     background-color: #663d15;
 }
 
+.pagination-item:last-child {
+    margin-right: 0;
+}
+
 .pagination-item-current a {
     color: #000000;
+    background-color: #ffffff;
 }
 
 .pagination-item-current a:hover,
@@ -410,12 +504,19 @@ input[type="radio"].visually-hidden {
     background-color: #ffffff;
 }
 
+/* Paginator */
+
+.product-photo {
+    width: 460px;
+}
+
 .product-photo-preview {
     display: flex;
     padding: 0;
     margin: 0;
     list-style: none;
 }
+
 
 .product-photo-preview li {
     width: 140px;
