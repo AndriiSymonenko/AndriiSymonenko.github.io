@@ -1,10 +1,17 @@
 
 @font-face {
-    font-family: 'pt_sansbold';
-    src: url('/BarberShop/font/ptc75f-webfont.woff2') format('woff2');
-    font-weight: normal;
+    font-family: 'PT Sans Narrow';
+    src: local('PT Sans Narrow'), local('PTSans-Narrow'), url('../font/ptsansnarrow.woff2') format('woff2'), url('../font/ptsansnarrow.woff') format('woff'), url('../font/ptsansnarrow.ttf') format('truetype');
+    font-weight: 400;
     font-style: normal;
 }
+@font-face {
+    font-family: 'PT Sans Narrow';
+    src: local('PT Sans Narrow Bold'), local('PTSans-NarrowBold'), url('../font/ptsansnarrowbold.woff2') format('woff2'), url('../font/ptsansnarrowbold.woff') format('woff'), url('../font/ptsansnarrowbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
 
 body {
     font-family: "PT Sans Narrow" , Arial, sans-serif;
@@ -15,12 +22,10 @@ body {
     text-transform: uppercase;
 
     background-color: #000000;
-    background-image: url("/BarberShop/img/bg.jpg");
+    background-image: url("../img/bg.jpg");
     background-position: top center;
     background-repeat: no-repeat;
 }
-
-
 
 
 .inner-page {
@@ -86,7 +91,7 @@ input[type="radio"].visually-hidden {
     font-size: 16px;
     line-height: 20px;
     color: #ffffff;
-    background-color: #000000;
+    
 }
 
 .site-navigation,
@@ -968,5 +973,5 @@ appointetment-item label {
 
 .footer-copyright .button {
     display: block;
-    margin-right: 
+    margin-right: auto;
 }
