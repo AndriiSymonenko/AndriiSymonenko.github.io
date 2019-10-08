@@ -165,13 +165,13 @@
     </footer>
     <section class="modal modal-login">
         <h2>Личный кабинет</h2>
-        <p>Введите свой логин и пароль</p>
+        <p class="modal-description">Введите пожалуйста свой логин и пароль</p>
        <form class="login-form" action="#" method="POST">
         <p> <label class="visually-hidden" for="login-user">Логин</label>
             <input class="login-icon-user" id="login-user" type="text" name="login" placeholder="Логин">
         </p>
         <p> <label class="visually-hidden" for="password-user">Пароль</label>
-            <input class="password-icon-user" id="password-user" type="text" name="password" placeholder="Пароль">
+            <input class="password-icon-user" id="password-user" type="password" name="password" placeholder="Пароль">
         </p>
     <p class="login-password-info">
         <label class="login-checkbox">
@@ -181,6 +181,7 @@
             </label>
             <a class="restore" href="#">Я забыл пароль</a>
     </p>
+    <button class="button" type="submit">Войти</button>
        </form>
        <button class="modal-close" type="button">Закрыть</button>
     </section>
