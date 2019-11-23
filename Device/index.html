@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Device</title>
 </head>
 <body>
     <header class="main-header">
         <nav class="main-navigation container">
-            <a href="#" class="main-header-logo">Device</a>
+            <a href="#" class="main-header-logo"><img src="/img/black-logo.svg" alt="Логотип Device"></a>
             <ul class="site-navigation-head">
                 <li><input type="text" value="Поиск по сайту"></li>
                 <li><a href="login.html">Войти</a></li>
@@ -31,13 +31,95 @@
                         </li>
                         <li>
                                 <a href="#">Квадрокоптеры</a>
-                             </li>
+                        </li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Гарантия</a></li>
+                        <li><a href="#">Контакты</a></li>
                     </ul>
         </nav>
     </header>
         <main class="container">
+            <h1 class="visually-hidden">Магазин Device</h1>
             <section class="main-slider">
-                <!-- slider here -->
+                <div class="container">
+                    <h2 class="visually-hidden">Популярные товары</h2>
+            <div class="slider-controls">
+                <button class="slider-control slider-control-active" type="button"></button>
+                <button class="slider-control" type="button"></button>
+                <button class="slider-control" type="button"></button>
+            </div>
+            <ul class="slider-item">
+                <li class="slide slide-active">
+                <img src="monopod.png" alt="Монопод">
+                <div class="slide-content">
+                    <b>Делай селфи,<br>
+                        как Бен Стиллер!</b>
+                    <p>Самая длинная палка для селфи доступна в нашем магазине.
+                            Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                    <a href="#" class="button">Подробнее</a>
+                    <table class="property">
+                        <table>
+                            <tr>
+                                <td>8,5 м</td>
+                                <td>5 кг</td>
+                                <td>Карбон</td>
+                            </tr>
+                            <tr>
+                                <td>Длина палки</td>
+                                <td>Вес палки</td>
+                                <td>Материал</td>
+                            </tr>
+                        </table>
+                    </table>
+                </div>
+                </li>
+
+                <li class="slide">
+                        <img src="fitness.png" alt="Фитнесс-браслет">
+                        <div class="slide-content">
+                            <b>Худеем,<br>
+                                правильно!</b>
+                            <p>Мотивирующие фитнес-браслеты помогут найти в себе силы 
+                                    не пропускать занятия и соблюдать диету.</p>
+                            <a href="#" class="button">Подробнее</a>
+                            <table class="property">
+                                <table>
+                                    <tr>
+                                        <td>48 часов</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Без подзарядки</td>
+                                    </tr>
+                                </table>
+                            </table>
+                        </div>
+                        </li>
+
+                        <li class="slide">
+                                <img src="quadcopter.png" alt="Квадрокоптер">
+                                <div class="slide-content">
+                                    <b>Порхает как бабочка,<br>
+                                        жалит как пчела!</b>
+                                    <p>Этот обычный, на первый взгляд, квадрокоптер оснащен 
+                                            мощным лазером, замаскированным под стандартную камеру.</p>
+                                    <a href="#" class="button">Подробнее</a>
+                                    <table class="property">
+                                        <table>
+                                            <tr>
+                                                <td>800 м</td>
+                                                <td>50 м</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Дальность полёта</td>
+                                                <td>Радиус поражения</td>
+                                            </tr>
+                                        </table>
+                                    </table>
+                                </div>
+                                </li>
+            </ul>
+                </div>
+            
             </section>
         
             <section class="catalog-icon">
@@ -107,7 +189,34 @@
                  </section>
         </main>
         <footer class="main-footer">
-            
-        </footer>
+            <div class="footer-navigation">
+                <a href="index.html"><img src="/img/yellow-logo.svg" alt="Логотип Device"></a>
+                <ul class="site-navigation-footer">
+                    <li><input type="text" value="Поиск по сайту"></li>
+                    <li><a href="login.html">Войти</a></li>
+                    <li><a href="compar.html">Сравнить</a></li>
+                    <li><a href="basket.html">Корзина</a></li>
+                </ul>
+            </div>
+            <div class="adres-services-phone">
+                <p>г. Москва, ул. Строителей, 15</p>
+                <ul>
+                     <li><a href="#">Доставка</a></li>
+                     <li><a href="#">Гарантия</a></li>
+                     <li><a href="#">Контакты</a></li>
+                </ul>
+                <a href="tel:+12345678910">Тел.: +1 (234)567 89 10</a>
+            </div>
+        <div class="footer-social-copyright">
+            <ul class="social-icon-link">
+                <li><a href="#"><span class="visually-hidden">Facebook</span></a></li>
+                <li><a href="#"><span class="visually-hidden">Instagram</span></a></li>
+                <li><a href="#"><span class="visually-hidden">Twitter</span></a></li>
+            </ul>
+            <div class="copyright">
+                <img src="img/logo-html.svg" alt="HTML Academy" width="27" height="35">
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
