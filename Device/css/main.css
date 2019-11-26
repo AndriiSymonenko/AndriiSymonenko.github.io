@@ -56,3 +56,39 @@ input[type="radio"].visually-hidden {
 ul {
     list-style: none;
 }
+
+.main-header {
+    background-color: #f7e296;
+}
+
+.site-navigation-head a {
+    font-family: opensans;
+    font-size: 15px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.site-navigation-head a:hover,
+.site-navigation-head a:focus {
+    opacity: 60%;
+}
+
+
+.site-navigation-head a:active {
+    opacity: 30%;
+}
+
+.site-navigation-head input {
+    font-family: opensans;
+    font-size: 15px;
+    color: #000000;
+    opacity: 30%;
+    border: none;
+}
+
+.site-navigation {
+    font-family: "gilroyextrabold";
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
