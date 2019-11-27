@@ -9,34 +9,44 @@
 </head>
 <body>
     <header class="main-header">
-        <nav class="main-navigation container">
+       
             <a href="#" class="main-header-logo"><img src="/img/black-logo.svg" alt="Логотип Device"></a>
+            <div class="main-header-up-menu">
+                <form class="form-search" action="GET" action="#">
+                    <label class="visually-hidden" for="search-input">Поле поиска</label>
+                    <input class="main-header-search" id="search-input" type="text" placeholder="Поиск по сайту">
+                    <button type="submit" class="search-button">Найти</button>
+                </form>
             <ul class="site-navigation-head">
-                <li><input type="text" value="Поиск по сайту"></li>
                 <li><a href="login.html">Войти</a></li>
                 <li><a href="compar.html">Сравнить</a></li>
                 <li><a href="basket.html">Корзина</a></li>
             </ul>
+        </div>
+        <nav class="main-navigation container">
            <ul class="site-navigation">
-               <li class="main-page-catalog">
+                   <li class="catalog-menu">
                    <a href="#">Каталог товаров</a>
-                   <ul>
-                       <li>
-                           <a href="#">Виртуальная реальность</a>
-                           <a href="#">Моноподы для селфи</a>
-                           <a href="#">Экшн-камеры</a>
-                       </li>
-                       <li>
-                           <a href="#">Фитнес-браслеты</a>
-                           <a href="#">Умные часы</a>
-                        </li>
-                        <li>
-                                <a href="#">Квадрокоптеры</a>
-                        </li>
+                   <div class="catalog-hidden">
+                   <ul class="catalog-hidden-1">
+                        <li><a href="#">Виртуальная реальность</a></li>
+                        <li><a href="#">Моноподы для селфи</a></li>
+                        <li><a href="#">Экшн-камеры</a></li>
+                   </ul>
+                   <ul class="catalog-hidden-2">
+                           <li><a href="#">Фитнес-браслеты</a></li>
+                           <li><a href="#">Умные часы</a></li>
+             
+                    </ul>
+                    <ul class="catalog-hidden-3">
+                                <li><a href="#">Квадрокоптеры</a></li>
+                    </ul>
+                    </div>    
+                    </li>
                         <li><a href="#">Доставка</a></li>
                         <li><a href="#">Гарантия</a></li>
                         <li><a href="#">Контакты</a></li>
-                    </ul>
+                </ul>
         </nav>
     </header>
         <main class="container">
@@ -57,11 +67,11 @@
                         как Бен Стиллер!</b>
                     <p>Самая длинная палка для селфи доступна в нашем магазине.
                             Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-                    <a href="#" class="button">Подробнее</a>
+                    <a href="#" class="button button-more">Подробнее</a>
                     <table class="property">
-                        <table>
+                        <tbody>
                             <tr>
-                                <td>8,5 м</td>
+                                <td class="test">8,5 м</td>
                                 <td>5 кг</td>
                                 <td>Карбон</td>
                             </tr>
@@ -70,12 +80,12 @@
                                 <td>Вес палки</td>
                                 <td>Материал</td>
                             </tr>
+                        </tbody>
                         </table>
-                    </table>
                 </div>
                 </li>
 
-                <li class="slide">
+                <li class="slide temp">
                         <img src="fitness.png" alt="Фитнесс-браслет">
                         <div class="slide-content">
                             <b>Худеем,<br>
@@ -96,7 +106,7 @@
                         </div>
                         </li>
 
-                        <li class="slide">
+                        <li class="slide temp">
                                 <img src="quadcopter.png" alt="Квадрокоптер">
                                 <div class="slide-content">
                                     <b>Порхает как бабочка,<br>
@@ -135,28 +145,30 @@
             </section>
             <section class="service-slider">
                 <h2 class="visually-hidden">Наши Сервисы</h2>
-                <input class="visually-hidden" type="radio" name="sliders" id="slide-1" checked>
-                <input class="visually-hidden" type="radio" name="sliders" id="slide-2">
-                <input class="visually-hidden" type="radio" name="sliders" id="slide-3">
-            <div class="slider-delivery">
+                <input class="service-control filter-input-radio" type="radio" name="sliders" id="slide-1" checked>
+                <input class="service-control filter-input-radio" type="radio" name="sliders" id="slide-2">
+                <input class="service-control filter-input-radio visually-hidden" type="radio" name="sliders" id="slide-3">
+            <div class="slider-delivery active">
                 <h3>Доставка</h3>
                 <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </div>
-            </section>
+           
             <div class="slider-warranty">
                     <h3>Гарантия</h3>
                     <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
                     Товар, не дом, конечно же.</p>
                 </div>
-                </section>
+              
                 <div class="slider-credit">
                         <h3>Кредит</h3>
                         <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные 
                                 условия кредита. Выгодные для нашего банка, разумеется.</p>
                     </div>
-                    <label class="services-slider-label" for="slide-1">Доставка</label>
-                    <label class="services-slider-label"  for="slide-2">Гарантия</label>
-                    <label class="services-slider-label"  for="slide-3">Кредит</label>
+                <div class="slider-controls">
+                    <label class="button services-slider-label"  for="slide-1">Доставка</label>
+                    <label class="button services-slider-label"  for="slide-2">Гарантия</label>
+                    <label class="button services-slider-label"  for="slide-3">Кредит</label>
+                </div>
                  </section>
 
                  <section class="main-brands">
