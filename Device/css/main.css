@@ -34,6 +34,10 @@ body {
     margin: 0;
 }
 
+.container {
+    width: 1160px;
+}
+
 a {
     text-decoration: none;
 }
@@ -100,6 +104,43 @@ ul {
     height: 35px;
 }
 
+.main-header-up-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 1040px;
+}
+
+.form-search {
+    width: 440px;
+}
+
+.site-navigation-head {
+    display: flex;
+    width: 50px;
+}
+
+.user-login a {
+    font-family: opensans;
+    font-size: 15px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.user-login a:hover,
+.user-login a:focus {
+    opacity: 60%;
+}
+
+.user-login a:active {
+    opacity: 30%;
+}
+
+.site-navigation-head li {
+    width: 95px;
+    margin-right: 40px;
+}
+
+
 .site-navigation-head a {
     font-family: opensans;
     font-size: 15px;
@@ -125,9 +166,17 @@ ul {
     border: none;
 }
 
+.site-navigation li {
+    width: 122px;
+}
 
+.site-navigation .catalog-menu {
+    width: 250px;
+}
 
 .site-navigation {
+    display: flex;
+    justify-content: space-between;
     font-family: "gilroyextrabold";
     font-size: 18px;
     line-height: 24px;
