@@ -4,18 +4,22 @@
     font-weight: normal;
     font-style: normal;
 }
+
 body {
     font-family: "Roboto", Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
     color: #283136;
     min-width: 1200px;
-    background-color: #ffffff;
-
+    background-color: #ffffff
 }
+
+
 a {
     text-decoration: none;
 }
+
+
 
 .container {
     width: 1200px;
@@ -23,6 +27,7 @@ a {
     padding: 0 20px;
     box-sizing: border-box;
 }
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -44,7 +49,7 @@ a {
     margin-bottom: 80px;
 }
 
-.slider-list { 
+.slider-list {
     margin: 0;
     padding: 0;
 
@@ -60,6 +65,7 @@ a {
     line-height: 55px;
     font-weight: 500;
 }
+
 .slider-item p {
     max-width: 430px;
     margin: 0;
@@ -78,6 +84,7 @@ a {
     border-radius: 3px;
     border: none;
 }
+
 .button:hover {
     background-color: #e74246;
 }
@@ -85,14 +92,24 @@ a {
 .button:focus,
 .button:active {
     background-color: #d7373b;
-    color:rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .main-navigation {
+    display: flex;
     color: #000000;
     line-height: 30px;
     text-transform: uppercase;
     font-weight: 650;
+}
+
+.site-navigation {
+    display: flex;
+    width: 640px;
+}
+
+.site-navigation li {
+    margin-right: 48px;
 }
 
 .site-navigation,
@@ -105,16 +122,22 @@ a {
     color: #000000;
 }
 
-.site-navigation a:hover{
+.site-navigation a:hover {
     color: #fb565a;
 }
+
 .site-navigation a:focus {
     color: #a6a6a6;
 }
 
+
+.main-header-logo {
+    width: 360px;
+}
+
 .product-service {
-  font-size: 16px;
-  margin-bottom: 80px;
+    font-size: 16px;
+    margin-bottom: 80px;
 }
 
 .product-service h3 {
@@ -126,13 +149,21 @@ a {
 .service-list {
     list-style: none;
     display: flex;
-    padding:0;
+    padding: 0;
 }
 
 
 .service-item {
     width: 300px;
     margin-right: 100px;
+}
+
+.service-item img {
+    margin-bottom: 25px;
+}
+
+.servise-button {
+    width: 160px;
 }
 
 .app-button {
@@ -147,10 +178,11 @@ a {
 .app-button:active {
     background-color: #00aa62;
 }
- 
+
 .presentations-button {
     background-color: #efc84a;
 }
+
 .presentations-button:hover {
     background-color: #eab534
 }
@@ -168,7 +200,7 @@ a {
 .specialization {
     width: 660px;
     padding: 0;
-    margin:0;
+    margin: 0;
     margin-right: 140px;
 }
 
@@ -194,7 +226,8 @@ a {
 
 .project-list li {
     width: 260px;
-    margin-right: 20px; /* fix */
+    margin-right: 20px;
+    /* fix */
 }
 
 .project-list a {
@@ -203,4 +236,40 @@ a {
 
 .project-list a:hover {
     opacity: 1;
+}
+
+.contact {
+    position: relative;
+    background-image: url("../img/map.jpg");
+    height: 420px;
+    width: 100%;
+}
+
+.contact-modal {
+    position: absolute;
+    top: 70px;
+    left: 91px;
+    padding: 50px;
+    background-color: #ffffff;
+    width: 320px;
+}
+
+.contact-modal h2 {
+    font-size: 18px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    width: 220px;
+}
+
+.contact-modal p {
+    width: 220px;
+}
+
+#blat {
+    margin: 0;
+}
+
+.contact-modal-button {
+    margin: 0;
+    width: 220px;
 }
