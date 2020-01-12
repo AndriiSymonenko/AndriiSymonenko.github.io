@@ -62,8 +62,6 @@ a {
   height: 8px;
   border-radius: 50%;
   border: 1px solid #c1c1c1;
-
-
 }
 
 .slider-item {
@@ -195,7 +193,7 @@ a {
   content: "";
   width: 15px;
   height: 15px;
-  background-image: url("/img/cart-icon.svg");
+  background-image: url("../img/cart-icon.svg");
   fill: blue;
 }
 
