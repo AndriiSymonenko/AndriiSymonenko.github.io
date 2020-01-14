@@ -1,7 +1,21 @@
 @font-face {
   font-family: "Roboto";
-  src: url("/Nerds/fonts/roboto-regular-webfont.woff2") format("woff2");
-  font-weight: normal;
+  src: url("../fonts/roboto-regular-webfont.woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto-medium-webfont.woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto-bold-webfont.woff2");
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -67,7 +81,6 @@ a {
 .slider-item {
   display: none;
   padding: 90px 0px 80px 0px;
-  font-size: ;
 }
 
 .slider-item:nth-child(1) {
@@ -211,8 +224,18 @@ a {
 }
 
 .product-service {
+  position: relative;
   font-size: 16px;
   margin-bottom: 80px;
+}
+
+.product-service::after {
+  position: absolute;
+  bottom: -80px;
+  content: "";
+  width: 1160px;
+  height: 2px;
+  background-color: #eeeeee;
 }
 
 .product-service h3 {
@@ -281,24 +304,74 @@ a {
 }
 
 .specialization {
-  width: 660px;
+  flex-basis: 660px;
   padding: 0;
   margin: 0;
   margin-right: 140px;
 }
 
+.specialization p {
+  margin-bottom: 40px;
+}
+
 .about-us-title {
+  display: block;
+  font-weight: 500;
   font-size: 45px;
   line-height: 45px;
-  font-weight: 500;
+  margin-bottom: 30px;
 }
 
 .about-us-list {
   list-style: none;
 }
 
+.specialization .list-title {
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.about-us-list li {
+  position: relative;
+  margin-left: 38px;
+  margin-bottom: 30px;
+}
+
+.about-us-list li::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  left: -35px;
+  top: 50%;
+  background-color: #fb565a;
+}
+
 .advantages {
   width: 400px;
+}
+
+.advantages p {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 38px;
+}
+
+.advantages-table th {
+  position: relative;
+  font-size: 45px;
+  text-align: left;
+  padding-bottom: 30px;
+}
+
+
+.advantages-table th::after {
+  position: absolute;
+  content: "%";
+  bottom: 35px;
+  font-size: 25px;
+  
 }
 
 .project-list {
@@ -308,8 +381,8 @@ a {
 }
 
 .project-list li {
-  width: 260px;
-  margin-right: 20px;
+  width: 200px;
+  margin-left: 70px;
   /* fix */
 }
 
