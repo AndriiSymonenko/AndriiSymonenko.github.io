@@ -226,7 +226,7 @@ a {
 .product-service {
   position: relative;
   font-size: 16px;
-  margin-bottom: 80px;
+  margin-bottom: 120px;
 }
 
 .product-service::after {
@@ -299,8 +299,18 @@ a {
 }
 
 .about-us {
+  position: relative;
   display: flex;
-  margin-bottom: 80px;
+  margin-bottom: 125px;
+}
+
+.about-us::after {
+  position: absolute;
+  bottom: -60px;
+  content: "";
+  width: 1160px;
+  height: 2px;
+  background-color: #eeeeee;
 }
 
 .specialization {
@@ -320,6 +330,7 @@ a {
   font-size: 45px;
   line-height: 45px;
   margin-bottom: 30px;
+  padding-top: 40px;
 }
 
 .about-us-list {
@@ -365,19 +376,29 @@ a {
   padding-bottom: 30px;
 }
 
-
 .advantages-table th::after {
   position: absolute;
   content: "%";
   bottom: 35px;
   font-size: 25px;
-  
 }
-
+.project {
+  position: relative;
+  margin-bottom: 130px;
+}
 .project-list {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+}
+
+.project::after {
+  position: absolute;
+  bottom: -40px;
+  content: "";
+  width: 1160px;
+  height: 2px;
+  background-color: #eeeeee;
 }
 
 .project-list li {
@@ -414,18 +435,45 @@ a {
   font-size: 18px;
   box-sizing: border-box;
   text-transform: uppercase;
+  margin-bottom: 25px;
   width: 220px;
 }
 
 .contact-modal p {
   width: 220px;
-}
-
-#blat {
-  margin: 0;
+  margin-bottom: 30px;
 }
 
 .contact-modal-button {
   margin: 0;
   width: 220px;
+}
+
+.main-footer {
+  display: flex;
+}
+.social-network {
+  margin-right: 120px;
+}
+.social-network-icon {
+  display: flex;
+  width: 260px;
+}
+
+.social-network-icon li {
+  width: 80px;
+  height: 80px;
+  background-color: #e1e1e1;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.main-footer-advantages {
+  width: 560px;
+}
+
+.main-footer-advantages span {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
 }
