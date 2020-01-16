@@ -382,10 +382,12 @@ a {
   bottom: 35px;
   font-size: 25px;
 }
+
 .project {
   position: relative;
   margin-bottom: 130px;
 }
+
 .project-list {
   display: flex;
   flex-wrap: wrap;
@@ -420,6 +422,7 @@ a {
   background-image: url("../img/map.jpg");
   height: 420px;
   width: 100%;
+  margin-bottom: 68px;
 }
 
 .contact-modal {
@@ -451,29 +454,41 @@ a {
 
 .main-footer {
   display: flex;
+  margin-bottom: 75px;
 }
+
 .social-network {
   margin-right: 120px;
 }
+
 .social-network-icon {
   display: flex;
   width: 260px;
 }
 
-.social-network-icon li {
+.social-button {
+  display: flex;
   width: 80px;
   height: 80px;
   background-color: #e1e1e1;
   border-radius: 50%;
   margin-right: 12px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.social-button:hover {
+  background-color: #fb565a;
 }
 
 .main-footer-advantages {
   width: 560px;
 }
 
-.main-footer-advantages span {
+.main-footer-advantages p:first-child {
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
+  margin-bottom: 10px;
 }
