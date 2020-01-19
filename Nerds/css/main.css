@@ -493,20 +493,32 @@ a {
   margin-bottom: 10px;
 }
 
+
+
 .modal {
-  width: 960px;
+  display: none;
   background-color: #ffffff;
   position: fixed;
-  top: 50%;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.modal-write-us {
+  width: 960px;
+  top: 20%;
   left: 30%;
   padding-top: 67px;
   padding-right: 100px;
   padding-left: 100px;
-  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.modal-show {
+  display: block !important;
 }
 
 .modal h2 {
   margin-bottom: 40px;
+  font-size: 45px;
+  line-height: 45px;
 }
 
 .modal input {
@@ -515,9 +527,9 @@ a {
 }
 
 
-.modal label {
+.text-modal {
   position: absolute;
-  top: 107px;
+  top: 125px;
 }
 
 .form-container {
@@ -528,12 +540,32 @@ a {
   align-content: flex-start;
 }
 
-.mail-form {
- 
-}
 
 .mail-form p {
   margin-bottom: 60px;
+}
+
+.mail-form input {
+  height: 48px;
+  border: 2px #eeeeee solid;
+  border-radius: 3px;
+}
+
+.text-area {
+  position: relative;
+}
+
+
+
+.mail-form textarea {
+  border: 2px #eeeeee solid;
+  border-radius: 3px;
+  height: 117px;
+  resize: none;
+}
+
+.form-container p:last-child {
+  margin-bottom: 50px;
 }
 
 .mail-form textarea {
@@ -542,4 +574,36 @@ a {
 
 .mail-form .text-area label {
   top: 190px
+}
+
+.button-modal {
+  margin-bottom: 80px;
+}
+
+
+.button-close-modal {
+  font-size: 0;
+  position: absolute;
+  top: 75px;
+  right: 90px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.button-close-modal::before,
+.button-close-modal::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 3px;
+  background-color: #fb565a;
+}
+
+.button-close-modal::before {
+  transform: rotate(45deg);
+}
+
+.button-close-modal::after {
+  transform: rotate(-45deg);
 }
