@@ -39,7 +39,7 @@
                         <legend>Стоимость:</legend>
                         <!-- Здесь будет range-selector -->
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="filter-grid">
                         <legend>Сетка:</legend>
                         <ul>
                             <li class="filter-option">
@@ -58,9 +58,9 @@
                                 <label for="filter-rubber">Резиновая</label>
                             </li>
                         </ul>
-                    </fieldset>
+                    </fieldset class="filter-grid">
 
-                    <fieldset>
+                    <fieldset class="filter-features">
                         <legend>Особенности:</legend>
                         <ul>
                             <li class="filter-option">
@@ -81,7 +81,7 @@
                             <li class="filter-option">
                                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
                                     name="gallery" id="filter-gallery">
-                                <label for="filter-news">Галерея</label>
+                                <label for="filter-gallery">Галерея</label>
                             </li>
                             <li class="filter-option">
                                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
@@ -93,18 +93,18 @@
                     <button type="submit" class="filter-button button">Показать</button>
                 </form>
             </section>
+            <div class="breadcrumbs-filter">
+                <p>Сортировать:</p>
+                <ul class="breadcrumbs-filter-list">
+                    <li><a href="#">по цене</a></li>
+                    <li><a class="breadcrumbs-current" href="#">по типу</a></li>
+                    <li><a class="breadcrumbs-current" href="#">по названию</a></li>
+                    <li class="breadcrumbs-filter-arrow-down"><a href="#"><span></span></a></li>
+                    <li class="breadcrumbs-filter-arrow-up"><a href="#"><span></span></a></li>
+                </ul>
+            </div>
             <section class="catalog-template">
                 <h2 class="visually-hidden">Каталог шаблонов</h2>
-                <div class="breadcrumbs-filter">
-                    <p>Сортировать:</p>
-                    <ul class="breadcrumbs-filter-list">
-                        <li><a href="#">по цене</a></li>
-                        <li><a class="breadcrumbs-current" href="#">по типу</a></li>
-                        <li><a class="breadcrumbs-current" href="#">по названию</a></li>
-                        <li class="breadcrumbs-filter-arrow-down"><a href="#"><span></span></a></li>
-                        <li class="breadcrumbs-filter-arrow-up"><a href="#"><span></span></a></li>
-                    </ul>
-                </div>
                 <ul class="catalog-list">
                     <li class="catalog-item">
                         <div class="catalog-item-header">
@@ -118,7 +118,7 @@
                             <a class="hidden-card-button" href="#">9 900 руб.</a>
                         </div>
                         <a href="#">
-                            <img src="#" alt="Шаблон Sedona">
+                            <img src="img/img-sedona.jpg" alt="Шаблон Sedona">
                         </a>
                         <h3 class="visually-hidden">Sedona</h3>
                     </li>
@@ -134,7 +134,7 @@
                             <a class="hidden-card-button" href="#">9 900 руб.</a>
                         </div>
                         <a href="#">
-                            <img src="img/img-sedona.jpg" alt="Шаблон Pink">
+                            <img src="img/img-pink.jpg" alt="Шаблон Pink">
                         </a>
                         <h3 class="visually-hidden">Pink</h3>
                     </li>

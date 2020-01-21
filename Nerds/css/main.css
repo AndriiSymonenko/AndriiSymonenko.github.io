@@ -644,3 +644,95 @@ a {
 .button-close-modal:hover::before {
   opacity: 100%;
 }
+
+/* Catalog page style */
+.filter {
+  width: 260px;
+}
+
+.filter-option {
+  padding-left: 35px;
+  margin-bottom: 20px;
+}
+
+.filter-grid,
+.filter-features {
+  margin-bottom: 40px;
+}
+
+
+.filter-grid legend,
+.filter-features legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 13px;
+}
+
+.filter-option label {
+  position: relative;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.filter-input-radio+label::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  width: 25px;
+  height: 25px;
+  border: 4px #a6a6a6 solid;
+  border-radius: 50%;
+}
+
+.filter-input-radio:checked+label::after {
+  content: "";
+  position: absolute;
+  left: -27.5px;
+  top: 6.5px;
+  width: 10px;
+  height: 10px;
+  background-color: #a6a6a6;
+  border-radius: 50%;
+}
+
+.filter-input-checkbox+label::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  width: 25px;
+  height: 25px;
+  border: 2px #a6a6a6 solid;
+  border-radius: 3px;
+}
+
+.filter-input-checkbox:checked+label::after {
+  content: "";
+  position: absolute;
+  left: -27.5px;
+  top: 3px;
+  width: 20px;
+  height: 10px;
+  border-left: 4px solid #a6a6a6;
+  border-bottom: 4px solid #a6a6a6;
+  transform: rotate(-45deg);
+  filter: drop-shadow(0px 2px 0 #fff) drop-shadow(0px -2px 0 #fff);
+}
+
+.filter-button {
+  width: 260px;
+  background-color: #eeeeee;
+  color: #000000;
+}
+
+.filter-button:hover {
+  background-color: #dfdfdf;
+}
+
+.filter-button:active,
+.filter-button:focus {
+  background-color: #d5d5d5;
+  border-top: 3px #bfbfbf solid;
+  color: #959595;
+}
