@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header class="main-header">
+    <header class="main-header inner-page">
         <div class="navigation-content container">
             <nav class="main-navigation">
                 <a class="main-header-logo" href="indexNerds.html">
@@ -32,6 +32,7 @@
     </header>
     <main>
         <div class="container">
+            <div class="catalog-column">
             <section class="filter">
                 <h2 class="visually-hidden">Фильтр товаров</h2>
                 <form class="filter" action="#" method="GET">
@@ -93,115 +94,92 @@
                     <button type="submit" class="filter-button button">Показать</button>
                 </form>
             </section>
-            <div class="breadcrumbs-filter">
-                <p>Сортировать:</p>
-                <ul class="breadcrumbs-filter-list">
-                    <li><a href="#">по цене</a></li>
-                    <li><a class="breadcrumbs-current" href="#">по типу</a></li>
-                    <li><a class="breadcrumbs-current" href="#">по названию</a></li>
-                    <li class="breadcrumbs-filter-arrow-down"><a href="#"><span></span></a></li>
-                    <li class="breadcrumbs-filter-arrow-up"><a href="#"><span></span></a></li>
-                </ul>
-            </div>
             <section class="catalog-template">
+                <div class="breadcrumbs-filter">
+                    <p>Сортировать:</p>
+                    <ul class="breadcrumbs-filter-list">
+                        <li><a href="#">по цене</a></li>
+                        <li><a class="breadcrumbs-current" href="#">по типу</a></li>
+                        <li><a class="breadcrumbs-current" href="#">по названию</a></li>
+                        <li class="breadcrumbs-filter-arrow-down"><a href="#"><span></span></a></li>
+                        <li class="breadcrumbs-filter-arrow-up"><a href="#"><span></span></a></li>
+                    </ul>
+                </div>
                 <h2 class="visually-hidden">Каталог шаблонов</h2>
                 <ul class="catalog-list">
                     <li class="catalog-item">
-                        <div class="catalog-item-header">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
+                        <a href="#">
+                         <p class="catalog-image">
+                            <img src="img/img-sedona.jpg" alt="Шаблон Sedona">
+                         </p>
                         <div class="catalog-item-card-hidden">
-                            <p>Sedona</p>
+                            <h3>Sedona</h3>
                             <p>Информационный сайт для туристов</p>
                             <a class="hidden-card-button" href="#">9 900 руб.</a>
                         </div>
-                        <a href="#">
-                            <img src="img/img-sedona.jpg" alt="Шаблон Sedona">
-                        </a>
-                        <h3 class="visually-hidden">Sedona</h3>
+                    </a>
                     </li>
                     <li class="catalog-item">
-                        <div class="catalog-item-header">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <div class="catalog-item-card-hidden">
-                            <p>Pink</p>
-                            <p>Сайт для прилолжения Pink</p>
-                            <a class="hidden-card-button" href="#">9 900 руб.</a>
-                        </div>
                         <a href="#">
+                            <p class="catalog-image">
                             <img src="img/img-pink.jpg" alt="Шаблон Pink">
+                            </p>
+                            <div class="catalog-item-card-hidden">
+                                <h3>Pink</h3>
+                                <p>Сайт для прилолжения Pink</p>
+                                <a class="hidden-card-button" href="#">9 900 руб.</a>
+                            </div>
                         </a>
-                        <h3 class="visually-hidden">Pink</h3>
                     </li>
                     <li class="catalog-item">
-                        <div class="catalog-item-header">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
+                        <a href="#">
+                        <p class="catalog-image">
+                            <img src="img/img-barbershop.jpg" alt="Шаблон Бородинский">
+                        </p>
                         <div class="catalog-item-card-hidden">
                             <p>Барбершоп Бородинский</p>
                             <p> Шаблон для Барбершопа</p>
                             <a class="hidden-card-button" href="#">9 900 руб.</a>
                         </div>
-                        <a href="#">
-                            <img src="img/img-barbershop.jpg" alt="Шаблон Бородинский">
                         </a>
-                        <h3 class="visually-hidden">Бородинский</h3>
                     </li>
                     <li class="catalog-item">
-                        <div class="catalog-item-header">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
+                        <a href="#">
+                        <p class="catalog-image">
+                            <img src="img/img-mishka.jpg" alt="Шаблон Mishki">
+                        </p>
                         <div class="catalog-item-card-hidden">
                             <p>Mishki</p>
                             <p>Магазин Hand Made</p>
                             <a class="hidden-card-button" href="#">9 900 руб.</a>
                         </div>
-                        <a href="#">
-                            <img src="img/img-mishka.jpg" alt="Шаблон Mishki">
                         </a>
-                        <h3 class="visually-hidden">Mishki</h3>
                     </li>
 
                     <li class="catalog-item">
-                        <div class="catalog-item-header">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
+                   
+                        <a href="#">
+                          <p class="catalog-image">
+                            <img src="img/img-aplus.jpg" alt="Шаблон A-Plus">
+                          </p>
                         <div class="catalog-item-card-hidden">
                             <p>A-Plus</p>
                             <p>Сайт для образовательной платформы</p>
                             <a class="hidden-card-button" href="#">9 900 руб.</a>
                         </div>
-                        <a href="#">
-                            <img src="img/img-aplus.jpg" alt="Шаблон A-Plus">
-                        </a>
-                        <h3 class="visually-hidden">A-Plus</h3>
+                    </a>
                     </li>
                     <li class="catalog-item">
-                        <div class="catalog-item-header">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <div class="catalog-item-card-hidden">
-                            <p>Кваст</p>
-                            <p>Сайт для производителя крафтового кваса</p>
-                            <a class="hidden-card-button" href="#">9 900 руб.</a>
-                        </div>
                         <a href="#">
+                            <p class="catalog-image">
                             <img src="img/img-kvast.jpg" alt="Шаблон Кваст">
+                            </p>
+                            <div class="catalog-item-card-hidden">
+                                <p>Кваст</p>
+                                <p>Сайт для производителя крафтового кваса</p>
+                                <a class="hidden-card-button" href="#">9 900 руб.</a>
+                            </div>
                         </a>
-                        <h3 class="visually-hidden">Кваст</h3>
                     </li>
                     <ul class="pagination-list">
                         <li class="pagination-item-current"><a href="#">1</a></li>
@@ -212,6 +190,7 @@
                 </ul>
             </section>
         </div>
+    </div>
         <section class="contact">
             <div class="contact-modal">
                 <h2>Nёrds design studio</h2>
@@ -221,6 +200,7 @@
                 </p>
                 <p class="telephone"> тел. +7 (812) 275-75-75</p>
                 <button class=" button contact-modal-button">Напишите нам</button>
+               
             </div>
         </section>
     </main>

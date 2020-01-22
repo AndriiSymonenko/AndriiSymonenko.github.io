@@ -166,8 +166,6 @@ a {
   background-color: #eeeeee;
 }
 
-
-
 .site-navigation {
   display: flex;
   width: 640px;
@@ -228,12 +226,15 @@ a {
   background-color: #eeeeee;
 }
 
+
+
 .main-header h1 {
   background-color: #eeeeee;
   font-size: 55px;
   line-height: 55px;
   padding-bottom: 90px;
   padding-top: 60px;
+  margin-bottom: 50px;
   text-align: center;
 }
 
@@ -520,8 +521,6 @@ a {
   margin-bottom: 10px;
 }
 
-
-
 .modal {
   display: none;
   background-color: #ffffff;
@@ -553,7 +552,6 @@ a {
   width: 360px;
 }
 
-
 .text-modal {
   position: absolute;
   top: 125px;
@@ -566,7 +564,6 @@ a {
   flex-wrap: wrap;
   align-content: flex-start;
 }
-
 
 .mail-form p {
   margin-bottom: 60px;
@@ -582,8 +579,6 @@ a {
 .text-area {
   position: relative;
 }
-
-
 
 .mail-form textarea {
   border: 2px #eeeeee solid;
@@ -603,13 +598,12 @@ a {
 }
 
 .mail-form .text-area label {
-  top: 190px
+  top: 190px;
 }
 
 .button-modal {
   margin-bottom: 80px;
 }
-
 
 .button-close-modal {
   font-size: 0;
@@ -639,13 +633,14 @@ a {
   transform: rotate(-45deg);
 }
 
-
 .button-close-modal:hover::after,
 .button-close-modal:hover::before {
   opacity: 100%;
 }
 
 /* Catalog page style */
+
+
 .filter {
   width: 260px;
 }
@@ -659,7 +654,6 @@ a {
 .filter-features {
   margin-bottom: 40px;
 }
-
 
 .filter-grid legend,
 .filter-features legend {
@@ -735,4 +729,46 @@ a {
   background-color: #d5d5d5;
   border-top: 3px #bfbfbf solid;
   color: #959595;
+}
+
+.catalog-column {
+  display: flex;
+  justify-content: space-between;
+}
+
+.breadcrumbs-filter {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.breadcrumbs-filter p {
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 600;
+  margin-right: 235px;
+}
+
+.breadcrumbs-filter-list {
+  display: flex;
+}
+
+.breadcrumbs-filter-list a {
+  margin-left: 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.catalog-template {
+  width: 760px;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog-item:nth-child(odd) {
+  margin-right: 30px;
 }
