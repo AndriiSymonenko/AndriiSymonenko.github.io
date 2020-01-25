@@ -20,7 +20,7 @@
                 <ul class="site-navigation">
                     <li><a href="#">Студия</a></li>
                     <li><a href="#">Клиенты</a></li>
-                    <li><a href="#">Магазин</a></li>
+                    <li class="current"><a href="#">Магазин</a></li class="current">
                     <li><a href="#">Контакты</a></li>
                 </ul>
                 <ul class="backet-list">
@@ -36,9 +36,21 @@
             <section class="filter">
                 <h2 class="visually-hidden">Фильтр товаров</h2>
                 <form class="filter" action="#" method="GET">
-                    <fieldset>
+                    <fieldset class="filter-price">
                         <legend>Стоимость:</legend>
-                        <!-- Здесь будет range-selector -->
+                        <div class="range-filter">
+                            <div class="range-control">
+                                <div class="scale">
+                                    <div class="bar"></div>
+                                    <div class="toggle toggle-min"></div>
+                                    <div class="toggle toggle-max"></div>
+                                </div>
+                            </div>
+                            <div class="price-control">
+                                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                                <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                            </div>
+                        </div>
                     </fieldset>
                     <fieldset class="filter-grid">
                         <legend>Сетка:</legend>
@@ -115,7 +127,7 @@
                         <div class="catalog-item-card-hidden">
                             <h3>Sedona</h3>
                             <p>Информационный сайт для туристов</p>
-                            <a class="hidden-card-button" href="#">9 900 руб.</a>
+                            <a class="button hidden-card-button" href="#">9 900 руб.</a>
                         </div>
                     </a>
                     </li>
@@ -126,8 +138,9 @@
                             </p>
                             <div class="catalog-item-card-hidden">
                                 <h3>Pink</h3>
-                                <p>Сайт для прилолжения Pink</p>
-                                <a class="hidden-card-button" href="#">9 900 руб.</a>
+                                <p>Продуктовый лендинг
+                                   приложения для iOS и Android</p>
+                                <a class="button hidden-card-button" href="#">9 900 руб.</a>
                             </div>
                         </a>
                     </li>
@@ -137,9 +150,9 @@
                             <img src="img/img-barbershop.jpg" alt="Шаблон Бородинский">
                         </p>
                         <div class="catalog-item-card-hidden">
-                            <p>Барбершоп Бородинский</p>
-                            <p> Шаблон для Барбершопа</p>
-                            <a class="hidden-card-button" href="#">9 900 руб.</a>
+                            <h3>Barbershop</h3>
+                            <p>Сайт салоны красоты. Для мужчин, да.</p>
+                            <a class="button hidden-card-button" href="#">9 900 руб.</a>
                         </div>
                         </a>
                     </li>
@@ -149,9 +162,10 @@
                             <img src="img/img-mishka.jpg" alt="Шаблон Mishki">
                         </p>
                         <div class="catalog-item-card-hidden">
-                            <p>Mishki</p>
-                            <p>Магазин Hand Made</p>
-                            <a class="hidden-card-button" href="#">9 900 руб.</a>
+                            <h3>Mishka</h3>
+                            <p>Интернет-магазин 
+                                вязаных игрушек</p>
+                            <a class="button hidden-card-button" href="#">9 900 руб.</a>
                         </div>
                         </a>
                     </li>
@@ -163,9 +177,9 @@
                             <img src="img/img-aplus.jpg" alt="Шаблон A-Plus">
                           </p>
                         <div class="catalog-item-card-hidden">
-                            <p>A-Plus</p>
-                            <p>Сайт для образовательной платформы</p>
-                            <a class="hidden-card-button" href="#">9 900 руб.</a>
+                            <h3>A-Plus</h3>
+                            <p>Лендинг курсов повышения квалификации</p>
+                            <a class="button hidden-card-button" href="#">9 900 руб.</a>
                         </div>
                     </a>
                     </li>
@@ -175,17 +189,18 @@
                             <img src="img/img-kvast.jpg" alt="Шаблон Кваст">
                             </p>
                             <div class="catalog-item-card-hidden">
-                                <p>Кваст</p>
-                                <p>Сайт для производителя крафтового кваса</p>
-                                <a class="hidden-card-button" href="#">9 900 руб.</a>
+                                <h3>Кваст</h3>
+                                <p>Промо-сайт производителя
+                                    крафтового кваса</p>
+                                <a class="button hidden-card-button" href="#">9 900 руб.</a>
                             </div>
                         </a>
                     </li>
                     <ul class="pagination-list">
-                        <li class="pagination-item-current"><a href="#">1</a></li>
+                        <li class="pagination-item item-current"><a href="#">1</a></li>
                         <li class="pagination-item"><a href="#">2</a></li>
                         <li class="pagination-item"><a href="#">3</a></li>
-                        <li class="pagination-item-next-button"><a href="#">Следующая</a></li>
+                        <li class=" button pagination-item-next-button"><a href="#">Следующая</a></li>
                     </ul>
                 </ul>
             </section>

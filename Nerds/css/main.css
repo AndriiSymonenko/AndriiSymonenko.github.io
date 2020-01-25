@@ -178,6 +178,19 @@ a {
   line-height: 30px;
 }
 
+.site-navigation .current {
+  position: relative;
+}
+
+.site-navigation .current::before {
+  position: absolute;
+  content: "";
+  top: 35px;
+  background-color: #fb565a;
+  width: 100%;
+  height: 3px;
+}
+
 .site-navigation,
 .backet-list {
   list-style: none;
@@ -198,7 +211,8 @@ a {
 }
 
 .backet-list {
-  width: 116px;
+  width: 16px;
+  margin-left: 83px;
 }
 
 .backet-list li {
@@ -211,7 +225,7 @@ a {
   color: #fb565a;
 }
 
-.backet-list a::after {
+.backet-list a::before {
   position: absolute;
   top: 7px;
   left: -30px;
@@ -642,23 +656,110 @@ a {
   width: 260px;
 }
 
+.filter legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 13px;
+}
+
 .filter-option {
   padding-left: 35px;
   margin-bottom: 20px;
 }
 
+.filter-price {
+  margin-bottom: 59px;
+}
+
+.range-filter {
+  margin-top: 49px;
+}
+
+.range-control {
+  position: relative;
+  height: 80px;
+  margin-bottom: 15px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.range-control .scale {
+  height: 2px;
+  background-color: #d7dcde;
+}
+
+.range-control .bar {
+  width: 70%;
+  height: 2px;
+  background-color: #00ca74;
+}
+
+.range-control .toggle {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  padding: 0;
+  border: 12px solid #ffffff;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-control .toggle:after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: #ababab;
+  border-radius: 50%;
+  right: -2px;
+  top: -1px;
+}
+
+.range-control .toggle-min {
+  left: 18px;
+}
+
+.range-control .toggle-max {
+  left: 160px;
+}
+
+.price-control {
+  font-size: 0;
+}
+
+.price-control label {
+  font-size: 16px;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 50%;
+}
+
+.price-control input {
+  width: 80px;
+  padding: 8px 1px;
+  margin-left: 10px;
+  font-size: 16px;
+  text-align: center;
+  color: #283136;
+  margin-left: 10px;
+  border: none;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.max-price {
+  text-align: right;
+}
+
 .filter-grid,
 .filter-features {
   margin-bottom: 40px;
-}
-
-.filter-grid legend,
-.filter-features legend {
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 600;
-  text-transform: uppercase;
-  margin-bottom: 13px;
 }
 
 .filter-option label {
@@ -731,11 +832,12 @@ a {
 .catalog-column {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 60px;
 }
 
 .breadcrumbs-filter {
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 
 .breadcrumbs-filter p {
@@ -820,6 +922,7 @@ a {
 }
 .catalog-item:hover .catalog-item-card-hidden {
   display: block;
+  box-shadow: 0px 6px 15px 0px rgba(0, 1, 1, 0.25);
 }
 .catalog-item-card-hidden {
   display: none;
@@ -828,6 +931,71 @@ a {
   height: 232px;
   top: 347px;
   background-color: #eeeeee;
+  text-align: center;
+  padding: 35px 65px 35px 65px;
 }
 
+.catalog-item-card-hidden h3 {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #000000;
+}
 
+.catalog-item-card-hidden p {
+  font-size: 16px;
+  line-height: 18px;
+  margin-bottom: 27px;
+  color: #000000;
+}
+
+.pagination-list {
+  display: flex;
+}
+
+.pagination-list a {
+  color: #000000;
+}
+
+.pagination-item {
+  width: 50px;
+  height: 50px;
+  background-color: #eeeeee;
+  margin-right: 10px;
+  border-radius: 5px;
+  padding: 12px 20px 12px 20px;
+}
+
+.item-current {
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 2px solid #eeeeee;
+}
+
+.pagination-item:hover {
+  background-color: #dfdfdf;
+}
+
+.pagination-item a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+.pagination-item-next-button {
+  width: 260px;
+  background-color: #eeeeee;
+}
+
+.pagination-item-next-button:hover {
+  background-color: #dfdfdf;
+}
+
+.pagination-item-next-button:active,
+.pagination-item-next-button:focus {
+  background-color: #d5d5d5;
+  border-top: 3px #bfbfbf solid;
+  color: #959595;
+}
