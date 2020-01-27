@@ -1,285 +1,335 @@
 @font-face {
-    font-family: 'gilroyextrabold';
-    src: local('gilroyextrabold'), local('gilroyextrabold'), url('../font/gilroyextrabold.woff2') format('woff2'), url('../font/gilroyextrabold.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'gilroylight';
-    src: local('gilroylight'), local('gilroylight'), url('../font/gilroylight.woff2') format('woff2'), url('../font/gilroylight.woff') format('woff');
-    font-weight: 700;
-    font-style: normal;
-}
-
-
-@font-face {
-    font-family: 'opensans';
-    src: local('opensans'), local('PTSans-Narrow'), url('../font/opensans.woff2') format('woff2'), url('../font/opensans.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
+  font-family: "gilroyextrabold";
+  src: local("gilroyextrabold"), local("gilroyextrabold"),
+    url("../font/gilroyextrabold.woff2") format("woff2"),
+    url("../font/gilroyextrabold.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'opensanslight';
-    src: local('opensanslight'), local('PTSans-Narrow'), url('../font/opensanslight.woff2') format('woff2'), url('../font/opensanslight.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
+  font-family: "gilroylight";
+  src: local("gilroylight"), local("gilroylight"),
+    url("../font/gilroylight.woff2") format("woff2"),
+    url("../font/gilroylight.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "opensans";
+  src: local("opensans"), local("PTSans-Narrow"),
+    url("../font/opensans.woff2") format("woff2"),
+    url("../font/opensans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "opensanslight";
+  src: local("opensanslight"), local("PTSans-Narrow"),
+    url("../font/opensanslight.woff2") format("woff2"),
+    url("../font/opensanslight.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
 
 body {
-    font-family: "gilroy", Arial, sans-serif;
-    font-size: 14px;
-    line-height: 40px;
-    font-weight: 400;
-    margin: 0;
+  font-family: "gilroy", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 400;
+  margin: 0;
 }
 
 .container {
-    width: 1160px;
+  width: 1160px;
+  margin: 0 auto;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .button {
-    position: relative;
-    font-family: "gilroy";
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 4px;
-    z-index: 1;
-    color: #000000;
-    text-transform: uppercase;
-    display: block;
-    box-sizing: border-box;
-    padding: 8px;
-    text-align: center;
+  position: relative;
+  font-family: "gilroy";
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  z-index: 1;
+  color: #000000;
+  text-transform: uppercase;
+  display: block;
+  box-sizing: border-box;
+  padding: 8px;
+  text-align: center;
 }
 
 .button::before {
-    position: absolute;
-    top: 43%;
-    z-index: -1;
-    content: "";
-    width: 100%;
-    left: 0;
-    height: 8px;
-    background-color: #f0c52e;
-    
+  position: absolute;
+  top: 43%;
+  z-index: -1;
+  content: "";
+  width: 100%;
+  left: 0;
+  height: 8px;
+  background-color: #f0c52e;
 }
 
 .button:hover::before {
-    transform: translateY(-43%);
-    height: 73%;
-    transition: height 0.3s;
+  transform: translateY(-43%);
+  height: 73%;
+  transition: height 0.3s;
 }
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 .main-header {
-    background-color: #f7e296;
+  position: relative;
+  background-color: #f7e296;
+  margin-top: 40px;
 }
-
 
 .main-header-logo {
-    width: 165px;
-    height: 35px;
-}
-
-.main-header-up-menu {
-    display: flex;
-    justify-content: space-between;
-    width: 1040px;
+  position: absolute;
+  width: 165px;
+  height: 35px;
+  top: -22px;
+  left: 60 px;
 }
 
 .form-search {
-    width: 440px;
+  width: 440px;
+  margin-top: 35px;
+}
+
+.main-header-up-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 1040px;
+  margin-left: 60px;
+  margin-bottom: 43px;
 }
 
 .site-navigation-head {
-    display: flex;
-    width: 50px;
+  display: flex;
+  width: 220px;
+}
+
+.user-login {
+  width: 280px;
+  margin-top: 35px;
 }
 
 .user-login a {
-    font-family: opensans;
-    font-size: 15px;
-    line-height: 30px;
-    color: #000000;
+  font-family: opensans;
+  font-size: 15px;
+  line-height: 30px;
+  color: #000000;
 }
 
 .user-login a:hover,
 .user-login a:focus {
-    opacity: 60%;
+  opacity: 60%;
 }
 
 .user-login a:active {
-    opacity: 30%;
+  opacity: 30%;
 }
 
 .site-navigation-head li {
-    width: 95px;
-    margin-right: 40px;
+  width: 95px;
+  margin-left: 40px;
+  text-align: right;
 }
 
+.site-navigation-head li:first-child {
+  margin-left: 0;
+}
+
+.site-navigation-head {
+  margin-top: 35px;
+}
 
 .site-navigation-head a {
-    font-family: opensans;
-    font-size: 15px;
-    line-height: 30px;
-    color: #000000;
+  font-family: opensans;
+  font-size: 15px;
+  line-height: 30px;
+  color: #000000;
 }
 
 .site-navigation-head a:hover,
 .site-navigation-head a:focus {
-    opacity: 60%;
+  opacity: 60%;
 }
 
-
 .site-navigation-head a:active {
-    opacity: 30%;
+  opacity: 30%;
 }
 
 .site-navigation-head input {
-    font-family: opensans;
-    font-size: 15px;
-    color: #000000;
-    opacity: 30%;
-    border: none;
+  font-family: opensans;
+  font-size: 15px;
+  color: #000000;
+  opacity: 30%;
+  border: none;
 }
 
-.site-navigation li {
-    width: 122px;
-}
-
-.site-navigation .catalog-menu {
-    width: 250px;
+.main-navigation {
+  padding-bottom: 60px;
 }
 
 .site-navigation {
-    display: flex;
-    justify-content: space-between;
-    font-family: "gilroyextrabold";
-    font-size: 18px;
-    line-height: 24px;
-    color: #000000;
-    text-transform: uppercase;
-    letter-spacing: 4px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "gilroyextrabold";
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  width: 1040px;
+  margin: 0 auto;
+}
+
+.site-navigation li {
+  width: 122px;
+}
+
+.site-navigation .catalog-menu {
+  width: 250px;
 }
 
 .site-navigation a {
-    color: #000000;
+  color: #000000;
 }
 
 .site-navigation a:hover,
 .site-navigation a:focus {
-    opacity: 60%;
+  opacity: 60%;
 }
 
 .site-navigation a:active {
-    opacity: 30%;
+  opacity: 30%;
 }
 
 .catalog-hidden a {
-    font-family: "opensans";
-    font-size: 15px;
-    line-height: 36px;
-    text-transform: none;
-    letter-spacing: 0px;
+  font-family: "opensans";
+  font-size: 15px;
+  line-height: 36px;
+  text-transform: none;
+  letter-spacing: 0px;
 }
 
 .temp {
-     display: none; /* temporary */
+  display: none;
+  /* temporary */
+}
+.slider-list {
+  background-image: linear-gradient(
+    rgba(240, 197, 46, 0.5) 0,
+    rgba(240, 197, 46, 0.5) 110px,
+    transparent 110px
+  );
 }
 
-.slide-content b {
-    font-size: 47px;
-    line-height: 56px;
+.slide-item {
+  display: flex;
+}
+
+.slider-content-left {
+  width: 560px;
+  text-align: center;
+}
+
+.slider-content-right {
+  width: 500px;
+  margin-top: 80px;
+}
+
+.slider-content-right b {
+  font-size: 47px;
+  line-height: 56px;
 }
 
 .slide-content p {
-    font-family: "opensans";
-    font-size: 15px;
-    line-height: 30px;
+  font-family: "opensans";
+  font-size: 15px;
+  line-height: 30px;
 }
 
 .button-more {
-    width: 220px;
+  width: 220px;
 }
 
 .property tr:first-child {
-    font-size: 36px;
+  font-size: 36px;
 }
 
 .catalog-icon a {
-    color: #000000;
+  color: #000000;
 }
 
 .catalog-icon h3 {
-    font-size: 18px;
-    line-height: 24px;
+  font-size: 18px;
+  line-height: 24px;
 }
-
-
-
 
 .service-slider {
-    background-color: #e5e5e5;
+  background-color: #e5e5e5;
 }
 
-
 .services-slider-label {
-    width: 160px;
-    cursor: pointer;
+  width: 160px;
+  cursor: pointer;
 }
 
 .service-slider h3 {
-    font-size: 47px;
+  font-size: 47px;
 }
 
-
 .services-slider-label {
-    position: relative;
-    font-family: "gilroy";
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 4px;
-    z-index: 1;
-    color: #000000;
-    text-transform: uppercase;
-    display: block;
-    box-sizing: border-box;
-    padding: 8px;
-    text-align: center;
+  position: relative;
+  font-family: "gilroy";
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  z-index: 1;
+  color: #000000;
+  text-transform: uppercase;
+  display: block;
+  box-sizing: border-box;
+  padding: 8px;
+  text-align: center;
 }
 
 .slider-controls label::before {
-    position: absolute;
-    top: 43%;
-    z-index: -1;
-    content: "";
-    width: 100%;
-    left: 0;
-    height: 8px;
-    background-color: #f0c52e;
+  position: absolute;
+  top: 43%;
+  z-index: -1;
+  content: "";
+  width: 100%;
+  left: 0;
+  height: 8px;
+  background-color: #f0c52e;
 }
 
 /* .slider-controls:hover::before {   /* to realize from js
@@ -288,106 +338,120 @@ ul {
     transition: height 0.3s;
 } */
 
-.service-control[id=slide-1]:checked~.slider-controls label[for="slide-1"], 
-.service-control[id=slide-2]:checked~.slider-controls label[for="slide-2"], 
-.service-control[id=slide-3]:checked~.slider-controls label[for="slide-3"]  {
-    color: #f7e184;
+.service-control[id="slide-1"]:checked ~ .slider-controls label[for="slide-1"],
+.service-control[id="slide-2"]:checked ~ .slider-controls label[for="slide-2"],
+.service-control[id="slide-3"]:checked ~ .slider-controls label[for="slide-3"] {
+  color: #f7e184;
 }
 
-.service-control[id=slide-1]:checked~.slider-controls label[for="slide-1"]::after,
-.service-control[id=slide-2]:checked~.slider-controls label[for="slide-2"]::after,
-.service-control[id=slide-3]:checked~.slider-controls label[for="slide-3"]::after {
-    position: absolute;
-    content: "";
-    box-sizing: border-box;
-    top: 7px;
-    right: 1px;
-    z-index: -1;
-    width: 100%;
-    height: 40px;
-    margin: 0;
-    background-color: #000;
-    transition: all .3s linear
+.service-control[id="slide-1"]:checked
+  ~ .slider-controls
+  label[for="slide-1"]::after,
+.service-control[id="slide-2"]:checked
+  ~ .slider-controls
+  label[for="slide-2"]::after,
+.service-control[id="slide-3"]:checked
+  ~ .slider-controls
+  label[for="slide-3"]::after {
+  position: absolute;
+  content: "";
+  box-sizing: border-box;
+  top: 7px;
+  right: 1px;
+  z-index: -1;
+  width: 100%;
+  height: 40px;
+  margin: 0;
+  background-color: #000;
+  transition: all 0.3s linear;
 }
 
-.service-control[id=slide-1]:checked~.slider-controls label[for="slide-1"]::before,
-.service-control[id=slide-2]:checked~.slider-controls label[for="slide-2"]::before,
-.service-control[id=slide-3]:checked~.slider-controls label[for="slide-3"]::before{
-    position: absolute;
-    content: "";
-    top: 7px;
-    left: 152px;
-    z-index: -2;
-    width: 120px;
-    height: 40px;
-    background-color: #000;
+.service-control[id="slide-1"]:checked
+  ~ .slider-controls
+  label[for="slide-1"]::before,
+.service-control[id="slide-2"]:checked
+  ~ .slider-controls
+  label[for="slide-2"]::before,
+.service-control[id="slide-3"]:checked
+  ~ .slider-controls
+  label[for="slide-3"]::before {
+  position: absolute;
+  content: "";
+  top: 7px;
+  left: 152px;
+  z-index: -2;
+  width: 120px;
+  height: 40px;
+  background-color: #000;
 }
-
 
 .about-us-contact h3 {
-    position: relative;
-    font-family: "gilroy", Arial, sans-serif;
-    font-size: 47px;
-    color: #000000;
-    line-height: 48px;
+  position: relative;
+  font-family: "gilroy", Arial, sans-serif;
+  font-size: 47px;
+  color: #000000;
+  line-height: 48px;
 }
 
 .about-us-contact h3::before {
-    position: absolute;
-    content: "";
-    height: 7px;
-    width: 80px;
-    top: -45px;
-    background-color: #000000;
+  position: absolute;
+  content: "";
+  height: 7px;
+  width: 80px;
+  top: -45px;
+  background-color: #000000;
 }
+
 .about-us-contact .button {
-    width: 260px;
+  width: 260px;
 }
+
 .about-us-contact p {
-    font-family: "opensans", Arial, sans-serif;
-    font-size: 15px;
-    line-height: 30px;
+  font-family: "opensans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
 }
 
 .about-us ul {
-    font-family: "gilroy", Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 40px;
-    color: #000000;
-    list-style: circle;
+  font-family: "gilroy", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #000000;
+  list-style: circle;
 }
 
 .main-footer {
-    font-family: "opensans", Arial, sans-serif;
-    font-size: 15px;
-    line-height: 30px;
-    background-color: #464646;
-    color: #ffffff;
+  font-family: "opensans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  background-color: #464646;
+  color: #ffffff;
 }
 
 .main-footer a {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .adres-services-phone {
-    position: relative;
+  position: relative;
 }
 
 .adres-services-phone li {
-    font-family: "gilroy", Arial, sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 4px;
-    line-height: 24px;
-    text-transform: uppercase;
+  font-family: "gilroy", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  line-height: 24px;
+  text-transform: uppercase;
 }
 
 .adres-services-phone p::after {
-    position: absolute;
-    content: "";
-    height: 7px;
-    width: 80px;
-    top: 45px; /* change later */
-    background-color: #ffc600;
+  position: absolute;
+  content: "";
+  height: 7px;
+  width: 80px;
+  top: 45px;
+  /* change later */
+  background-color: #ffc600;
 }
