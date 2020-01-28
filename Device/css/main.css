@@ -137,6 +137,7 @@ ul {
 .user-login {
   width: 280px;
   margin-top: 35px;
+  padding-left: 80px;
 }
 
 .user-login a {
@@ -144,6 +145,17 @@ ul {
   font-size: 15px;
   line-height: 30px;
   color: #000000;
+}
+
+.user-login li {
+  position: relative;
+}
+
+.user-login a::before {
+  position: absolute;
+  content: url("/img/user.svg");
+  top: 4px;
+  left: -30px;
 }
 
 .user-login a:hover,
@@ -156,9 +168,24 @@ ul {
 }
 
 .site-navigation-head li {
+  position: relative;
   width: 95px;
   margin-left: 40px;
   text-align: right;
+}
+
+.site-navigation-head li:nth-child(1)::before {
+  position: absolute;
+  content: url("/img/compare.svg");
+  top: 1px;
+  left: -5px;
+}
+
+.site-navigation-head li:nth-child(2)::before {
+  position: absolute;
+  content: url("/img/cart.svg");
+  top: 1px;
+  left: 1px;
 }
 
 .site-navigation-head li:first-child {
@@ -215,9 +242,12 @@ ul {
 }
 
 .site-navigation .catalog-menu {
-  width: 250px;
+  width: 500px;
 }
 
+.site-navigation li:nth-child(3) {
+  margin-right: 65px;
+}
 .site-navigation a {
   color: #000000;
 }
@@ -243,6 +273,11 @@ ul {
   display: none;
   /* temporary */
 }
+
+.main-slider {
+  position: relative;
+}
+
 .slider-list {
   background-image: linear-gradient(
     rgba(240, 197, 46, 0.5) 0,
@@ -258,10 +293,11 @@ ul {
 .slider-content-left {
   width: 560px;
   text-align: center;
+  margin-right: 40px;
 }
 
 .slider-content-right {
-  width: 500px;
+  width: 460px;
   margin-top: 80px;
 }
 
@@ -271,13 +307,50 @@ ul {
 }
 
 .slide-content p {
-  font-family: "opensans";
   font-size: 15px;
   line-height: 30px;
 }
 
 .button-more {
   width: 220px;
+  margin-bottom: 49px;
+}
+
+.slider-button {
+  position: absolute;
+  display: flex;
+  top: 300px;
+  right: 120px;
+  width: 78px;
+}
+
+.slider-control {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  margin-right: 21px;
+  cursor: pointer;
+}
+
+.slider-control:last-child {
+  margin-right: 0;
+}
+
+.slider-button .active-control::before {
+  position: absolute;
+  content: "";
+  top: 2px;
+  left: 2px;
+  width: 6px;
+  height: 6px;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+
+.property td {
+  padding-right: 45px;
 }
 
 .property tr:first-child {
@@ -293,8 +366,19 @@ ul {
   line-height: 24px;
 }
 
+.catalog-icon-list {
+  display: flex;
+}
+
 .service-slider {
   background-color: #e5e5e5;
+}
+
+.catalog-icon-list li {
+  width: 160px;
+  height: 160px;
+  background-color: #f0c52e;
+  opacity: ;
 }
 
 .services-slider-label {
