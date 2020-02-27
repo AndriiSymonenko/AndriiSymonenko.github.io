@@ -14,7 +14,7 @@
   <div class="container">
     <header class="main-header">
       <a href="#" class="main-header-logo">
-        <img src="/img/black-logo.svg" width="165" height="35" alt="Логотип Device" />
+        <img src="img/black-logo.svg" width="165" height="35" alt="Логотип Device" />
       </a>
       <div class="main-header-up-menu">
         <form class="form-search" action="GET" action="#">
@@ -69,7 +69,7 @@
         <ul class="slider-list">
           <li class="slide-item active">
             <div class="slider-content-left">
-              <img class="slider-image" src="/img/monopod.png" width="384" height="486" alt="Монопод" />
+              <img class="slider-image" src="img/monopod.png" width="384" height="486" alt="Монопод" />
             </div>
 
             <div class="slider-content-right">
@@ -152,34 +152,76 @@
     <section class="catalog-icon">
       <ul class="catalog-icon-list">
         <li>
-          <a href="#"><img src="" alt="Виртуальная реальность" />
-            <h3>Виртуальная реальность</h3>
-          </a>
-        </li>
-        <!--  внести размеры -->
-        <li>
-          <a href="#"><img src="" alt="Моноподы для селфи" />
-            <h3>Моноподы для селфи</h3>
-          </a>
-        </li>
-        <li>
-          <a href="#"><img src="" alt="Экшн-камеры" />
-            <h3>Экшн-камеры</h3>
+          <a href="#">
+            <figure>
+              <div class="catalog-icon-image">
+                <img src="img/VR-icon.svg" alt="Виртуальная реальность" />
+              </div>
+              <figcaption>
+                <h3>Виртуальная реальность</h3>
+              </figcaption>
+            </figure>
           </a>
         </li>
         <li>
-          <a href="#"><img src="" alt="Фитнесс-браслеты" />
-            <h3>Фитнесс-браслеты</h3>
+          <a href="#">
+            <figure>
+              <div class="catalog-icon-image">
+                <img src="img/monopod-icon.svg" alt="Моноподы для селфи" />
+              </div>
+              <figcaption>
+                <h3>Моноподы для селфи</h3>
+              </figcaption>
+            </figure>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <figure>
+              <div class="catalog-icon-image">
+                <img src="img/camera-icon.svg" alt="Экшн-камеры" />
+              </div>
+              <figcaption>
+                <h3>Экшн-камеры</h3>
+              </figcaption>
+            </figure>
           </a>
         </li>
         <li>
-          <a href="#"><img src="" alt="Умные часы" />
-            <h3>Умные часы</h3>
+          <a href="#">
+            <figure>
+              <div class="catalog-icon-image">
+                <img src="img/fit-bracelet-icon.svg" alt="Фитнесс-браслеты" />
+              </div>
+              <figcaption>
+                <h3>Фитнесс-браслеты</h3>
+              </figcaption>
+            </figure>
           </a>
         </li>
         <li>
-          <a href="#"><img src="" alt="Квадрокоптеры" />
-            <h3>Квадрокоптеры</h3>
+          <a href="#">
+            <figure>
+              <div class="catalog-icon-image">
+                <img src="img/smart-clock-icon.svg" alt="Умные часы" />
+              </div>
+              <figcaption>
+                <h3>Умные часы</h3>
+              </figcaption>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <figure>
+              <div class="catalog-icon-image">
+                <img src="img/quadrocopter-icon.svg" alt="Квадрокоптеры" />
+              </div>
+              <figcaption>
+                <h3>Квадрокоптеры</h3>
+              </figcaption>
+            </figure>
           </a>
         </li>
       </ul>
@@ -190,7 +232,12 @@
         checked />
       <input class="visually-hidden service-control filter-input-radio" type="radio" name="sliders" id="slide-2" />
       <input class="visually-hidden service-control filter-input-radio" type="radio" name="sliders" id="slide-3" />
-      <div class="slider-delivery active">
+      <div class="slider-controls">
+        <label class="services-slider-label current" for="slide-1">Доставка</label>
+        <label class="services-slider-label" for="slide-2">Гарантия</label>
+        <label class="services-slider-label" for="slide-3">Кредит</label>
+      </div>
+      <div class="slider-service-item active">
         <h3>Доставка</h3>
         <p>
           Мы с удовольствием доставим ваш товар прямо к вашему подъезду
@@ -199,7 +246,7 @@
         </p>
       </div>
 
-      <div class="slider-warranty">
+      <div class="slider-service-item">
         <h3>Гарантия</h3>
         <p>
           Если из-за возгорания купленного у нас товара у вас сгорит дом — не
@@ -207,7 +254,7 @@
         </p>
       </div>
 
-      <div class="slider-credit">
+      <div class="slider-service-item">
         <h3>Кредит</h3>
         <p>
           Залезть в долговую яму стало проще! Кредитные консультанты подберут
@@ -215,11 +262,7 @@
           банка, разумеется.
         </p>
       </div>
-      <div class="slider-controls">
-        <label class="services-slider-label current" for="slide-1">Доставка</label>
-        <label class="services-slider-label" for="slide-2">Гарантия</label>
-        <label class="services-slider-label" for="slide-3">Кредит</label>
-      </div>
+
     </section>
 
     <section class="main-brands">

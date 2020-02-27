@@ -276,6 +276,7 @@ ul {
 
 .main-slider {
   position: relative;
+  margin-bottom: 118px;
 }
 
 .slider-list {
@@ -357,6 +358,10 @@ ul {
   font-size: 36px;
 }
 
+.catalog-icon {
+  margin-bottom: 100px;
+}
+
 .catalog-icon a {
   color: #000000;
 }
@@ -367,18 +372,30 @@ ul {
 }
 
 .catalog-icon-list {
+  width: 1060px;
   display: flex;
+}
+
+.catalog-icon-list li {
+  margin-right: 40px;
 }
 
 .service-slider {
   background-color: #e5e5e5;
+  display: flex;
 }
 
-.catalog-icon-list li {
+.catalog-icon-image {
+  display: flex;
+  justify-content: center;
   width: 160px;
   height: 160px;
-  background-color: #f0c52e;
-  opacity: ;
+  background-color: rgba(240, 197, 46, 0.5);
+  margin-bottom: 28px;
+}
+
+.catalog-icon-image:hover {
+  background-color: rgba(240, 197, 46);
 }
 
 .services-slider-label {
@@ -388,6 +405,14 @@ ul {
 
 .service-slider h3 {
   font-size: 47px;
+}
+
+.slider-service-item {
+  display: none;
+}
+
+.slider-service-item.active {
+  display: block;
 }
 
 .services-slider-label {
@@ -403,6 +428,22 @@ ul {
   box-sizing: border-box;
   padding: 8px;
   text-align: center;
+}
+
+.slider-controls {
+  position: relative;
+  width: 300px;
+  margin-right: 120px;
+}
+
+.slider-controls::after {
+  position: absolute;
+  content: "";
+  width: 7px;
+  height: 320px;
+  background-color: #000000;
+  top: -60px;
+  left: 270px;
 }
 
 .slider-controls label::before {
