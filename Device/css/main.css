@@ -708,12 +708,20 @@ ul {
   width: 360px;
 }
 
-.adres-services-phone p::after {
+.footer-social-copyright {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 67px;
+}
+
+.footer-social-copyright::before {
   position: absolute;
   content: "";
   height: 7px;
   width: 80px;
-  top: 45px;
+  top: 0px;
+  left: 0px;
   /* change later */
   background-color: #ffc600;
 }
@@ -721,4 +729,22 @@ ul {
 .footer-phone {
   width: 360px;
   text-align: right;
+}
+
+.social-copyright {
+  display: flex;
+  justify-content: space-between;
+  width: 650px;
+}
+
+.social-icon-link {
+  width: 148px;
+  display: flex;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+  margin-right: 22px;
 }
