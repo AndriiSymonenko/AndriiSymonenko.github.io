@@ -622,6 +622,14 @@ ul {
   width: 800px;
 }
 
+.footer-logo:hover {
+  opacity: 0.6;
+}
+
+.footer-logo:active {
+  opacity: 0.3;
+}
+
 .site-navigation-footer {
   width: 360px;
   display: flex;
@@ -632,14 +640,19 @@ ul {
   width: 100px;
   margin-right: 25px;
   text-align: right;
+  opacity: 0.7;
 }
 
 .site-navigation-footer li:last-child {
   margin-right: 0;
 }
 
-.site-navigation-footer li {
-  position: relative;
+.site-navigation-footer li:hover {
+  opacity: 1;
+}
+
+.site-navigation-footer li:active {
+  opacity: 0.3;
 }
 
 .user-enter::before {
@@ -675,6 +688,12 @@ ul {
   background-repeat: no-repeat;
 }
 
+.adres-services-phone {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 62px;
+}
+
 .site-navigation-footer li .adres-services-phone {
   position: relative;
 }
@@ -688,10 +707,12 @@ ul {
   text-transform: uppercase;
 }
 
-.adres-services-phone {
-  display: flex;
-  padding-top: 20px;
-  padding-bottom: 62px;
+.adres-services-phone li:hover {
+  opacity: 0.6;
+}
+
+.adres-services-phone li:active {
+  opacity: 0.3;
 }
 
 .adres-services-phone ul {
@@ -747,4 +768,12 @@ ul {
   height: 32px;
   opacity: 0.3;
   margin-right: 22px;
+}
+
+.social-icon:hover {
+  opacity: 0.6;
+}
+
+.social-icon:active {
+  opacity: 0.1;
 }
