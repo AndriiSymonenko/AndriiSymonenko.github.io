@@ -150,26 +150,28 @@ ul {
   margin-left: -3px;
   line-height: 30px;
   padding: 8px 18px;
-  opacity: 0;
+  visibility: hidden;
 }
 
 .main-header-search:focus {
   border-bottom: 2px solid #000000;
 }
 
-.main-header-search:focus + .search-button {
-  opacity: 1;
+.main-header-search:focus+.search-button {
+  visibility: visible;
 }
 
-.search-button:hover {
-  background-color: #000000;
-  color: #ffffff;
-}
-
-.search-button:active,
+.search-button:hover,
 .search-button:focus {
   background-color: #000000;
+  color: #ffffff;
+  visibility: visible;
+}
+
+.search-button:active {
+  background-color: #000000;
   color: #747474;
+  visibility: visible;
 }
 
 .main-header-up-menu {
@@ -317,6 +319,12 @@ ul {
   position: relative;
 }
 
+.catalog-menu-main:focus+.catalog-hidden,
+.catalog-menu-main:hover+.catalog-hidden {
+  visibility: visible;
+}
+
+
 .catalog-menu-main:after {
   position: absolute;
   content: "";
@@ -326,6 +334,41 @@ ul {
   width: 16px;
   height: 16px;
   background-image: url("../img/plus.svg");
+}
+
+.catalog-hidden {
+  display: flex;
+  visibility: hidden;
+  position: absolute;
+  padding: 20px 60px 36px 0px;
+  line-height: 36px;
+  z-index: 5;
+  width: 1060px;
+  background-color: #f7e296;
+}
+
+.catalog-hidden:hover,
+.catalog-hidden:focus,
+.catalog-hidden:active {
+  visibility: visible;
+}
+
+.catalog-hidden-1 {
+  width: 200px;
+}
+
+.catalog-hidden-1 li {
+  width: 200px;
+  margin-right: 0;
+  margin-bottom: 2px;
+}
+
+.catalog-hidden-2 li {
+  width: 160px;
+}
+
+.catalog-hidden-3 li {
+  width:115px;
 }
 
 .catalog-hidden a {
@@ -344,14 +387,13 @@ ul {
 .main-slider {
   position: relative;
   margin-bottom: 118px;
+  z-index: 1;
 }
 
 .slider-list {
-  background-image: linear-gradient(
-    rgba(240, 197, 46, 0.5) 0,
-    rgba(240, 197, 46, 0.5) 110px,
-    transparent 110px
-  );
+  background-image: linear-gradient(rgba(240, 197, 46, 0.5) 0,
+      rgba(240, 197, 46, 0.5) 110px,
+      transparent 110px);
 }
 
 .slide-item {
@@ -541,21 +583,15 @@ ul {
     transition: height 0.3s;
 } */
 
-.service-control[id="slide-1"]:checked ~ .slider-controls label[for="slide-1"],
-.service-control[id="slide-2"]:checked ~ .slider-controls label[for="slide-2"],
-.service-control[id="slide-3"]:checked ~ .slider-controls label[for="slide-3"] {
+.service-control[id="slide-1"]:checked~.slider-controls label[for="slide-1"],
+.service-control[id="slide-2"]:checked~.slider-controls label[for="slide-2"],
+.service-control[id="slide-3"]:checked~.slider-controls label[for="slide-3"] {
   color: #f7e184;
 }
 
-.service-control[id="slide-1"]:checked
-  ~ .slider-controls
-  label[for="slide-1"]::after,
-.service-control[id="slide-2"]:checked
-  ~ .slider-controls
-  label[for="slide-2"]::after,
-.service-control[id="slide-3"]:checked
-  ~ .slider-controls
-  label[for="slide-3"]::after {
+.service-control[id="slide-1"]:checked~.slider-controls label[for="slide-1"]::after,
+.service-control[id="slide-2"]:checked~.slider-controls label[for="slide-2"]::after,
+.service-control[id="slide-3"]:checked~.slider-controls label[for="slide-3"]::after {
   position: absolute;
   content: "";
   box-sizing: border-box;
@@ -569,15 +605,9 @@ ul {
   transition: all 0.3s linear;
 }
 
-.service-control[id="slide-1"]:checked
-  ~ .slider-controls
-  label[for="slide-1"]::before,
-.service-control[id="slide-2"]:checked
-  ~ .slider-controls
-  label[for="slide-2"]::before,
-.service-control[id="slide-3"]:checked
-  ~ .slider-controls
-  label[for="slide-3"]::before {
+.service-control[id="slide-1"]:checked~.slider-controls label[for="slide-1"]::before,
+.service-control[id="slide-2"]:checked~.slider-controls label[for="slide-2"]::before,
+.service-control[id="slide-3"]:checked~.slider-controls label[for="slide-3"]::before {
   position: absolute;
   content: "";
   top: 7px;
