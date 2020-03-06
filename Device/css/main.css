@@ -157,7 +157,7 @@ ul {
   border-bottom: 2px solid #000000;
 }
 
-.main-header-search:focus + .search-button {
+.main-header-search:focus+.search-button {
   visibility: visible;
 }
 
@@ -319,8 +319,8 @@ ul {
   position: relative;
 }
 
-.catalog-menu-main:focus + .catalog-hidden,
-.catalog-menu-main:hover + .catalog-hidden {
+.catalog-menu-main:focus+.catalog-hidden,
+.catalog-menu-main:hover+.catalog-hidden {
   visibility: visible;
 }
 
@@ -395,11 +395,9 @@ ul {
 }
 
 .slider-list {
-  background-image: linear-gradient(
-    rgba(240, 197, 46, 0.5) 0,
-    rgba(240, 197, 46, 0.5) 110px,
-    transparent 110px
-  );
+  background-image: linear-gradient(rgba(240, 197, 46, 0.5) 0,
+      rgba(240, 197, 46, 0.5) 110px,
+      transparent 110px);
 }
 
 
@@ -408,7 +406,7 @@ ul {
   position: relative;
 }
 
-.if-active {
+.is-active {
   display: flex;
 }
 
@@ -423,21 +421,21 @@ ul {
   margin-top: 80px;
 }
 
-.slide-item-1 .slider-content-right::before {
+.slide-item:nth-child(1) .slider-content-right::before {
   content: "01";
 }
 
-.slide-item-2 .slider-content-right::before {
+.slide-item:nth-child(2) .slider-content-right::before {
   content: "02";
 }
 
-.slide-item-3 .slider-content-right::before {
+.slide-item:nth-child(3) .slider-content-right::before {
   content: "03";
 }
 
 .slider-content-right::before {
   position: absolute;
-  
+
   font-size: 179px;
   font-weight: 700;
   color: #ffffff;
@@ -533,12 +531,6 @@ ul {
   margin-right: 40px;
 }
 
-.service-slider {
-  background-color: #e5e5e5;
-  display: flex;
-  margin-bottom: 150px;
-}
-
 .catalog-icon-image {
   display: flex;
   justify-content: center;
@@ -550,6 +542,43 @@ ul {
 
 .catalog-icon-image:hover {
   background-color: rgba(240, 197, 46);
+}
+
+.service-slider {
+  position: relative;
+  background-color: #e5e5e5;
+  display: flex;
+  margin-bottom: 150px;
+}
+
+.slider-service-item--devivery::before {
+  position: absolute;
+  content: "";
+  width: 135px;
+  height: 160px;
+  right: 100px;
+  background-image: url("../img/delivery.svg");
+  background-repeat: no-repeat;
+}
+
+.slider-service-item--warranty::before {
+  position: absolute;
+  content: "";
+  width: 135px;
+  height: 160px;
+  right: 100px;
+  background-image: url("../img/warranty.svg");
+  background-repeat: no-repeat;
+}
+
+.slider-service-item--credit::before {
+  position: absolute;
+  content: "";
+  width: 155px;
+  height: 186px;
+  right: 100px;
+  background-image: url("../img/credit.svg");
+  background-repeat: no-repeat;
 }
 
 .services-slider-label {
@@ -627,21 +656,15 @@ ul {
     transition: height 0.3s;
 } */
 
-.service-control[id="slide-1"]:checked ~ .slider-controls label[for="slide-1"],
-.service-control[id="slide-2"]:checked ~ .slider-controls label[for="slide-2"],
-.service-control[id="slide-3"]:checked ~ .slider-controls label[for="slide-3"] {
+.service-control[id="slide-1"]:checked~.slider-controls label[for="slide-1"],
+.service-control[id="slide-2"]:checked~.slider-controls label[for="slide-2"],
+.service-control[id="slide-3"]:checked~.slider-controls label[for="slide-3"] {
   color: #f7e184;
 }
 
-.service-control[id="slide-1"]:checked
-  ~ .slider-controls
-  label[for="slide-1"]::after,
-.service-control[id="slide-2"]:checked
-  ~ .slider-controls
-  label[for="slide-2"]::after,
-.service-control[id="slide-3"]:checked
-  ~ .slider-controls
-  label[for="slide-3"]::after {
+.service-control[id="slide-1"]:checked~.slider-controls label[for="slide-1"]::after,
+.service-control[id="slide-2"]:checked~.slider-controls label[for="slide-2"]::after,
+.service-control[id="slide-3"]:checked~.slider-controls label[for="slide-3"]::after {
   position: absolute;
   content: "";
   box-sizing: border-box;
@@ -655,15 +678,9 @@ ul {
   transition: all 0.3s linear;
 }
 
-.service-control[id="slide-1"]:checked
-  ~ .slider-controls
-  label[for="slide-1"]::before,
-.service-control[id="slide-2"]:checked
-  ~ .slider-controls
-  label[for="slide-2"]::before,
-.service-control[id="slide-3"]:checked
-  ~ .slider-controls
-  label[for="slide-3"]::before {
+.service-control[id="slide-1"]:checked~.slider-controls label[for="slide-1"]::before,
+.service-control[id="slide-2"]:checked~.slider-controls label[for="slide-2"]::before,
+.service-control[id="slide-3"]:checked~.slider-controls label[for="slide-3"]::before {
   position: absolute;
   content: "";
   top: 7px;
