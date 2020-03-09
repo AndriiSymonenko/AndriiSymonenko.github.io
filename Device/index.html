@@ -56,15 +56,15 @@
       </nav>
     </header>
   </div>
-  <main class="container">
+  <main>
     <h1 class="visually-hidden">Магазин Device</h1>
     <section class="main-slider">
       <div class="container">
         <h2 class="visually-hidden">Популярные товары</h2>
         <div class="slider-button">
-          <i class="slider-control active-control" data-control-name = "slide-1"></i>
-          <i class="slider-control" data-control-name = "slide-2"></i>
-          <i class="slider-control" data-control-name = "slide-3"></i>
+          <i class="slider-control active-control" data-control-name="slide-1"></i>
+          <i class="slider-control" data-control-name="slide-2"></i>
+          <i class="slider-control" data-control-name="slide-3"></i>
         </div>
         <ul class="slider-list">
           <li class="slide-item is-active">
@@ -132,7 +132,7 @@
                 Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
                 лазером, замаскированным под стандартную камеру.
               </p>
-              <<a href="#" class="button button-more">Подробнее/<a>
+              <a href="#" class="button button-more">Подробнее/<a>
                   <table class="property">
                     <tr>
                       <td>800 м</td>
@@ -148,166 +148,186 @@
         </ul>
       </div>
     </section>
+    <div class="container">
+      <section class="catalog-icon">
 
-    <section class="catalog-icon">
-      <ul class="catalog-icon-list">
-        <li>
-          <a href="#">
-            <figure>
-              <div class="catalog-icon-image">
-                <img src="img/VR-icon.svg" alt="Виртуальная реальность" />
-              </div>
-              <figcaption>
-                <h3>Виртуальная реальность</h3>
-              </figcaption>
-            </figure>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <figure>
-              <div class="catalog-icon-image">
-                <img src="img/monopod-icon.svg" alt="Моноподы для селфи" />
-              </div>
-              <figcaption>
-                <h3>Моноподы для селфи</h3>
-              </figcaption>
-            </figure>
-          </a>
-        </li>
+        <ul class="catalog-icon-list">
+          <li>
+            <a href="#">
+              <figure>
+                <div class="catalog-icon-image">
+                  <img src="img/VR-icon.svg" alt="Виртуальная реальность" />
+                </div>
+                <figcaption>
+                  <h3>Виртуальная реальность</h3>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <figure>
+                <div class="catalog-icon-image">
+                  <img src="img/monopod-icon.svg" alt="Моноподы для селфи" />
+                </div>
+                <figcaption>
+                  <h3>Моноподы для селфи</h3>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
 
-        <li>
-          <a href="#">
-            <figure>
-              <div class="catalog-icon-image">
-                <img src="img/camera-icon.svg" alt="Экшн-камеры" />
-              </div>
-              <figcaption>
-                <h3>Экшн-камеры</h3>
-              </figcaption>
-            </figure>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <figure>
-              <div class="catalog-icon-image">
-                <img src="img/fit-bracelet-icon.svg" alt="Фитнесс-браслеты" />
-              </div>
-              <figcaption>
-                <h3>Фитнесс-браслеты</h3>
-              </figcaption>
-            </figure>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <figure>
-              <div class="catalog-icon-image">
-                <img src="img/smart-clock-icon.svg" alt="Умные часы" />
-              </div>
-              <figcaption>
-                <h3>Умные часы</h3>
-              </figcaption>
-            </figure>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <figure>
-              <div class="catalog-icon-image">
-                <img src="img/quadrocopter-icon.svg" alt="Квадрокоптеры" />
-              </div>
-              <figcaption>
-                <h3>Квадрокоптеры</h3>
-              </figcaption>
-            </figure>
-          </a>
-        </li>
-      </ul>
-    </section>
-    <section class="service-slider">
-      <h2 class="visually-hidden">Наши Сервисы</h2>
-      <input class="visually-hidden service-control filter-input-radio" type="radio" name="sliders" id="slide-1"
-        checked />
-      <input class="visually-hidden service-control filter-input-radio" type="radio" name="sliders" id="slide-2" />
-      <input class="visually-hidden service-control filter-input-radio" type="radio" name="sliders" id="slide-3" />
-      <div class="slider-controls">
-        <label class="services-slider-label current" for="slide-1">Доставка</label>
-        <label class="services-slider-label" for="slide-2">Гарантия</label>
-        <label class="services-slider-label" for="slide-3">Кредит</label>
-      </div>
-      <div class="slider-service-item slider-service-item--devivery active">
-        <h3>Доставка</h3>
-        <p>
-          Мы с удовольствием доставим ваш товар прямо к вашему подъезду
-          совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на
-          ваш этаж.
-        </p>
-      </div>
+          <li>
+            <a href="#">
+              <figure>
+                <div class="catalog-icon-image">
+                  <img src="img/camera-icon.svg" alt="Экшн-камеры" />
+                </div>
+                <figcaption>
+                  <h3>Экшн-камеры</h3>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <figure>
+                <div class="catalog-icon-image">
+                  <img src="img/fit-bracelet-icon.svg" alt="Фитнесс-браслеты" />
+                </div>
+                <figcaption>
+                  <h3>Фитнесс-браслеты</h3>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <figure>
+                <div class="catalog-icon-image">
+                  <img src="img/smart-clock-icon.svg" alt="Умные часы" />
+                </div>
+                <figcaption>
+                  <h3>Умные часы</h3>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <figure>
+                <div class="catalog-icon-image">
+                  <img src="img/quadrocopter-icon.svg" alt="Квадрокоптеры" />
+                </div>
+                <figcaption>
+                  <h3>Квадрокоптеры</h3>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <section class="service">
+      <div class="service-slider container">
+        <h2 class="visually-hidden">Наши Сервисы</h2>
+        <input class="visually-hidden service-control filter-input-radio" type="radio" name="sliders" id="slide-1"
+          checked />
+        <input class="visually-hidden service-control filter-input-radio" type="radio" name="sliders" id="slide-2" />
+        <input class="visually-hidden service-control filter-input-radio" type="radio" name="sliders" id="slide-3" />
+        <div class="slider-controls">
+          <label class="services-slider-label current" for="slide-1">Доставка</label>
+          <label class="services-slider-label" for="slide-2">Гарантия</label>
+          <label class="services-slider-label" for="slide-3">Кредит</label>
+        </div>
+        <div class="slider-service-item slider-service-item--devivery active">
+          <h3>Доставка</h3>
+          <p>
+            Мы с удовольствием доставим ваш товар прямо к вашему подъезду
+            совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на
+            ваш этаж.
+          </p>
+        </div>
 
-      <div class="slider-service-item slider-service-item--warranty">
-        <h3>Гарантия</h3>
-        <p>
-          Если из-за возгорания купленного у нас товара у вас сгорит дом — не
-          переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
-        </p>
-      </div>
+        <div class="slider-service-item slider-service-item--warranty">
+          <h3>Гарантия</h3>
+          <p>
+            Если из-за возгорания купленного у нас товара у вас сгорит дом — не
+            переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
+          </p>
+        </div>
 
-      <div class="slider-service-item slider-service-item--credit">
-        <h3>Кредит</h3>
-        <p>
-          Залезть в долговую яму стало проще! Кредитные консультанты подберут
-          для вас наиболее выгодные условия кредита. Выгодные для нашего
-          банка, разумеется.
-        </p>
+        <div class="slider-service-item slider-service-item--credit">
+          <h3>Кредит</h3>
+          <p>
+            Залезть в долговую яму стало проще! Кредитные консультанты подберут
+            для вас наиболее выгодные условия кредита. Выгодные для нашего
+            банка, разумеется.
+          </p>
+        </div>
       </div>
     </section>
 
     <section class="main-brands">
-      <ul class="brands-list">
-        <li>
-          <a href="#"><img src="img/logo-1.png" alt="DJI" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="img/logo-3-1.png" alt="SP Gadgets" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="img/logo-3.png" alt="GoPro" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="img/logo-4.png" alt="Vive" /></a>
-        </li>
-      </ul>
-    </section>
-    <section class="about-us-contact">
-      <div class="about-us">
-        <h3>О нас</h3>
-        <p>
-          Огромный выбор гаджетов не оставит равнодушным гика, который есть в
-          каждом из нас.
-        </p>
-        <p>
-          Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE
-          работает со многими транспортными компаниями:
-        </p>
-        <ul>
-          <li>Деловые линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
+      <div class="container">
+        <ul class="brands-list">
+          <li>
+            <a href="#">
+              <img class="brand-item-img" src="img/logo-1.png" alt="DJI" />
+              <img class="brand-item-img-color" src="img/logo-1-color.png" alt="DJI" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img class="brand-item-img" src="img/logo-2.png" alt="SP Gagets" />
+              <img class="brand-item-img-color" src="img/logo-2-color.png" alt="SP Gagets" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img class="brand-item-img" src="img/logo-3.png" alt="GoPro" />
+              <img class="brand-item-img-color" src="img/logo-3-color.png" alt="GoPro" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img class="brand-item-img" src="img/logo-4.png" alt="Vive" />
+              <img class="brand-item-img-color" src="img/logo-4-color.png" alt="Vive" />
+            </a>
+          </li>
         </ul>
-        <a class="button" href="#">Подробнее о нас</a>
       </div>
-      <div class="contact">
-        <h3>Контакты</h3>
-        <p>
-          Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
-          проверить работоспособность покупки. Всякое бывает.
-        </p>
-        <a class="contact-map" href="#">
-          <img src="img/map.jpg" alt="Карта проезда" />
-        </a>
-        <a class="button" href="#">Напишите нам</a>
+    </section>
+    <section class="about-us-contact-item">
+      <div class="about-us-contact container">
+        <div class="about-us">
+          <h3>О нас</h3>
+          <p>
+            Огромный выбор гаджетов не оставит равнодушным гика, который есть в
+            каждом из нас.
+          </p>
+          <p>
+            Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE
+            работает со многими транспортными компаниями:
+          </p>
+          <ul>
+            <li>Деловые линии</li>
+            <li>Автотрейдинг</li>
+            <li>ЖелДорЭкспедиция</li>
+          </ul>
+          <a class="button" href="#">Подробнее о нас</a>
+        </div>
+        <div class="contact">
+          <h3>Контакты</h3>
+          <p>
+            Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
+            проверить работоспособность покупки. Всякое бывает.
+          </p>
+          <a class="contact-map" href="#">
+            <img src="img/map.jpg" alt="Карта проезда" />
+          </a>
+          <a class="button" href="#">Напишите нам</a>
+        </div>
       </div>
     </section>
   </main>
@@ -419,4 +439,5 @@
   </footer>
   <script src="js/min.js"></script>
 </body>
+
 </html>
