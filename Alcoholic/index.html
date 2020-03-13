@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/reset.css">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <section class="alcohol-test">
+    <div class="check-result hidden">
+      <p class="result-text">Ты сегодня выпьешь:</p>
+      <p class="result-alcohol"></p>
+      <p class="result-vodka"></p>
+
+    </div>
+    <form class="main-form" action="GET" name="main-form">
+      <ul class="alcohol-list">
+        <li class="alcohol-list-item">
+          <p><label class="quantity-label" for="quantity-alcohol">Сколько пьём?</label></p>
+          <input id="quantity-alcohol" class=" input-item quantity-alcohol" type="text" name="quantity-alcohol"
+            placeholder="1 литр" />
+        </li>
+        <li class="alcohol-list-item">
+          <p><label class="percent-label" for="percent-alcohol">Сколько градусов алкоголя?</label></p>
+          <input id="percent-alcohol" class=" input-item percent-alcohol" type="text" name="percent-alcohol"
+            placeholder="40" />
+        </li>
+      </ul>
+      <button class="check-button" type="button">Расчитать</button>
+    </form>
+  </section>
+  <script src="js/min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+@font-face {
+    font-family: "gilroyextrabold";
+    src: local("gilroyextrabold"), local("gilroyextrabold"),
+        url("../font/gilroyextrabold.woff2") format("woff2"),
+        url("../font/gilroyextrabold.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "gilroylight";
+    src: local("gilroylight"), local("gilroylight"),
+        url("../font/gilroylight.woff2") format("woff2"),
+        url("../font/gilroylight.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "opensans";
+    src: local("opensans"), local("PTSans-Narrow"),
+        url("../font/opensans.woff2") format("woff2"),
+        url("../font/opensans.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "opensanslight";
+    src: local("opensanslight"), local("PTSans-Narrow"),
+        url("../font/opensanslight.woff2") format("woff2"),
+        url("../font/opensanslight.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    width: 1160px;
+}
+
+.main-form {
+    /* width: 50%; */
+    background-color: blanchedalmond;
+    font-family: "gilroyextrabold";
+}
+
+.alcohol-list {
+
+    list-style: none;
+    /* display: flex;
+    justify-content: center; */
+}
+
+.alcohol-list-item {
+
+    display: flex;
+}
+
+.alcohol-list-item .input-label {
+    display: block;
+    width: 100px;
+    font-size: 1px;
+}
