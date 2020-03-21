@@ -35,22 +35,23 @@
                         <p class="form-header__text-big">Be Smart, Think Smart, Save Money</p>
                         <p class="form-header__text-small">Compare your take-home today</p>
                     </div>
-                    <div class="form=content">
-                        <input type="text" name="number_phone" id="number_phone" placeholder="Phone Number">
-                        <input type="text" name="date" id="date" placeholder="Day Rate">
+                    <div class="form-header__content">
+                        <input class="form-header__input-phone" type="text" name="number_phone" id="number_phone"
+                            placeholder="Phone Number">
+                        <input class="form-header__input-date" type="text" name="date" id="date" placeholder="Day Rate">
                         <input type="submit" value="Submit">
                     </div>
                 </fieldset>
             </form>
-            <div class="header-contact_image">
+            <div class="header-contact__image">
                 <img src="img/header-contact.png" alt="Save Money" width="520" height="431">
             </div>
         </section>
     </header>
     <main class="page-main">
         <section class="features">
-            <h2 class="features__header">Features</h2>
-            <p class="features__header-text">Our key competitive advantages</p>
+            <h2 class="section-header">Features</h2>
+            <p class="fsection-header__text">Our key competitive advantages</p>
             <ul class="features__list">
                 <li class="feature__list-item">
                     <img class="features__list__icon" src="#" alt="header">
@@ -79,8 +80,8 @@
             </ul>
         </section>
         <section class="how-works">
-            <h2 class="how-works__header">How it works</h2>
-            <p class="how-works__header-text">Get the result in 3 easy steps</p>
+            <h2 class="section-header">How it works</h2>
+            <p class="section-header__text">Get the result in 3 easy steps</p>
             <ul class="how-works__list">
                 <li class="how-works__list-item">
                     <span class="how-works__number">01</span>
@@ -93,6 +94,89 @@
                 <li class="how-works__list-item">
                     <span class="how-works__number">03</span>
                     <p class="how-works__text">We contact you to give you the results</p>
+                </li>
+            </ul>
+        </section>
+        <section class="call-action">
+            <div class="call-action__window">
+                <h2 class="call-action__header">Call to action</h2>
+                <p class="call-action__text">Mauris sed dapibus metus. Integer dictum fringilla metus,
+                    facilisis lacinia lorem facilisis eget.
+                    Mauris auctor lacinia velit, in pretium lectus placerat nec.
+                    Nam porttitor nisi in velit blandit ultricies.
+                </p>
+                <a class="button call-action__button" href="#">Learn more</a>
+            </div>
+        </section>
+        <section class="compare-plans">
+            <h2 class="visyally-hidden">Compare plans</h2>
+            <form class="compare-plans__form" action="GET">
+                <label class="compare-plans__form-label" for="number-employees">Number of employees</label>
+                <input class="compare-plans__form-input" type="text" name="number-employees" id="number-employees">
+                <label class="compare-plans__form-label" for="payroll">For the payroll, I use</label>
+                <input class="compare-plans__form-input" type="text" name="payroll" id="payroll">
+                <input class="button compare-plans__form-button" type="submit" value="Compare plans">
+            </form>
+        </section>
+        <section class="main-price">
+            <h2 class="section-header">Price</h2>
+            <p class="section-header__text">Compare our tariff plans</p>
+            <ul class="main-price__list">
+                <li class="main-price__list-item">
+                    <h4 class="main-price__header">Tier 1</h4>
+                    <p class="main-price__prise"><span>$</span>11.99 <span>/ month</span></p>
+                    <ul class="main-price__list-option">
+                        <li class="list-option__item">Some option 1</li>
+                        <li class="list-option__item">Some option 2</li>
+                        <li class="list-option__item">Some option 3</li>
+                        <li class="list-option__item">Some option 4</li>
+                        <li class="list-option__item">Some option 5</li>
+                    </ul>
+                    <a class="button main-price__button" href="">Choose</a>
+                </li>
+                <li class="main-price__list-item">
+                    <h4 class="main-price__header">Tier 1</h4>
+                    <p class="main-price__prise"><span>$</span>11.99 <span>/ month</span></p>
+                    <ul class="main-price__list-option">
+                        <li class="list-option__item">Some option 1</li>
+                        <li class="list-option__item">Some option 2</li>
+                        <li class="list-option__item">Some option 3</li>
+                        <li class="list-option__item">Some option 4</li>
+                        <li class="list-option__item">Some option 5</li>
+                    </ul>
+                    <a class="button main-price__button" href="">Choose</a>
+            </ul>
+        </section>
+        <section class="partners">
+            <h2 class="section-header">Our partners</h2>
+            <p class="section-header__text">We work with a lot of partners,
+                it would be ugly of us not to mention them
+            </p>
+            <ul class="partner-list">
+                <li class="partner-list__item">
+                    <a class="partner-list__link" href="#">
+                        <img class="partner-list__icon" src="img/bp.png" alt="British Petroleum">
+                    </a>
+                </li>
+                <li class="partner-list__item">
+                    <a class="partner-list__link" href="#">
+                        <img class="partner-list__icon" src="img/virgin.png" alt="Virgin">
+                    </a>
+                </li>
+                <li class="partner-list__item">
+                    <a class="partner-list__link" href="#">
+                        <img class="partner-list__icon" src="img/nhs.png" alt="NHS">
+                    </a>
+                </li>
+                <li class="partner-list__item">
+                    <a class="partner-list__link" href="#">
+                        <img class="partner-list__icon" src="img/edf.png" alt="EDF ENR">
+                    </a>
+                </li>
+                <li class="partner-list__item">
+                    <a class="partner-list__link" href="#">
+                        <img class="partner-list__icon" src="img/sony.png" alt="SONY">
+                    </a>
                 </li>
             </ul>
         </section>
