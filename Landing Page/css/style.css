@@ -1,0 +1,80 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/roboto-regular-webfont.woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/roboto-medium-webfont.woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/roboto-bold-webfont.woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+/* main style */
+
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    color: #333333;
+    min-width: 1280px;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 100px;
+    background-color: #3f72af;
+    color: #ffffff;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+    background-color: #112d4e;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "PlayfairDisplay", serif;
+}
