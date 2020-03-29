@@ -1,4 +1,5 @@
 window.addEventListener('DOMContentLoaded', function () {
+    //Tabs
     'use strict';
     let tab = document.querySelectorAll('.info-header-tab'),
         info = document.querySelector('.info-header'),
@@ -33,5 +34,46 @@ window.addEventListener('DOMContentLoaded', function () {
         }
 
     });
+
+    //Timer
+
+
+    let deadLine = '2020-03-30';
+
+    function getTimeRemaining(endtime) {
+        let timeChange = Date.parse(endtime) - Date.parse(new Date()),
+            seconds = Math.floor((timeChange / 1000) % 60), //residue second
+            minutes = Math.floor((timeChange / 1000 / 60) % 60),
+            hours = Math.floor((timeChange / (1000 * 60 * 60)));
+
+        return {
+            'total': timeChange,
+            'hours': hours,
+            'minutes': minutes,
+            'seconds': seconds
+        };
+    }
+
+    function setTimer(id, endtime) {
+        let timer = document.getElementById(id),
+            hours = timer.querySelector('.hours'),
+            minutes = timer.querySelector('.minutes'),
+            seconds = timer.querySelector('.seconds'),
+            timeInterval = setInterval(upDateTimer, 1000);
+
+
+        function upDateTimer() {
+            let time = getTimeRemaining(endtime);
+            hours.textContent = (time.hours < 10) ? '0' + time.hours : time.hours;
+            minutes.textContent = (time.minutes < 10) ? '0' + time.minutes : time.minutes;
+            seconds.textContent = (time.seconds < 10) ? '0' + time.seconds : time.seconds;
+
+            if (time.total <= 0) {
+                clearInterval(timeInterval);
+            }
+        }
+    }
+
+    setTimer('timer', deadLine);
 
 });
