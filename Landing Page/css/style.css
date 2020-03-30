@@ -78,3 +78,52 @@ h2,
 h3 {
     font-family: "PlayfairDisplay", serif;
 }
+
+ul {
+    padding: 0;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+
+.main-navigation {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    margin: 0;
+}
+
+.main-header__logo {
+    width: 770px;
+}
+
+.site-list {
+    display: flex;
+    width: 230px;
+
+}
+
+.site-list__item {
+    padding: 0;
+    margin-left: 50px;
+}
+
+.site-list__item a {
+    color: black;
+}
+
+.site-list__item:first-child {
+    margin-left: 0;
+}
+
+.contact-us-list {
+    padding: 0;
+    width: 135px;
+    margin-left: 50px;
+    text-align: center;
+}

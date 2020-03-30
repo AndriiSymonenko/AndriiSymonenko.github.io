@@ -38,10 +38,11 @@ window.addEventListener('DOMContentLoaded', function () {
     //Timer
 
 
-    let deadLine = '2020-03-30';
+    let deadLine = new Date().setHours(new Date().getHours() + 12); // deadLine Your Date + 12 hours
+
 
     function getTimeRemaining(endtime) {
-        let timeChange = Date.parse(endtime) - Date.parse(new Date()),
+        let timeChange = endtime - Date.parse(new Date()),
             seconds = Math.floor((timeChange / 1000) % 60), //residue second
             minutes = Math.floor((timeChange / 1000 / 60) % 60),
             hours = Math.floor((timeChange / (1000 * 60 * 60)));
@@ -75,5 +76,25 @@ window.addEventListener('DOMContentLoaded', function () {
     }
 
     setTimer('timer', deadLine);
+
+
+    //modal window
+
+    let moreButton = document.querySelector('.more'),
+        overlayWindow = document.querySelector('.overlay'),
+        closeButton = document.querySelector('.popup-close');
+
+    moreButton.addEventListener('click', function () {
+        overlayWindow.style.display = 'block';
+        this.classList.add('more-splash');
+        document.body.style.overflow = 'hidden'; //stop scrol
+    });
+
+    closeButton.addEventListener('click', function () {
+        overlayWindow.style.display = 'none';
+        this.classList.remove('more-splash');
+        document.body.style.overflow = '';
+    });
+
 
 });
