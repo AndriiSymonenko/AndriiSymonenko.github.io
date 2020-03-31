@@ -79,12 +79,19 @@ h3 {
     font-family: "PlayfairDisplay", serif;
 }
 
+
+fieldset {
+    border: none;
+}
+
+p,
 ul {
     padding: 0;
+    margin: 0;
 }
 
 .container {
-    width: 1280px;
+    width: 1180px;
     margin: 0 auto;
     padding: 0 20px;
     box-sizing: border-box;
@@ -99,13 +106,14 @@ ul {
 }
 
 .main-header__logo {
-    width: 770px;
+    width: 200px;
 }
 
 .site-list {
     display: flex;
-    width: 230px;
-
+    justify-content: flex-end;
+    width: 800px;
+    padding-top: 10px;
 }
 
 .site-list__item {
@@ -114,7 +122,7 @@ ul {
 }
 
 .site-list__item a {
-    color: black;
+    color: #666666;
 }
 
 .site-list__item:first-child {
@@ -126,4 +134,46 @@ ul {
     width: 135px;
     margin-left: 50px;
     text-align: center;
+}
+
+.contact-us-list__item {
+    border: 1px solid #666666;
+    border-radius: 10px
+}
+
+.contact-us-list__item:hover {
+    background-color: #3f72af;
+}
+
+.contact-us-list__button {
+    display: inline-block;
+    padding: 10px 25px;
+    color: #666666;
+}
+
+.contact-us-list__button:hover {
+    color: white;
+}
+
+.header-contact {
+    display: flex;
+}
+
+.header-contact__form {
+    display: flex;
+    width: 500px;
+
+}
+
+.form-header {
+    width: 310px;
+}
+
+.form-header__text-big {
+    font-family: "PlayfairDisplay medium", serif;
+    font-size: 50px;
+    line-height: 72px;
+    font-weight: 500;
+    padding-top: 100px;
+    
 }
