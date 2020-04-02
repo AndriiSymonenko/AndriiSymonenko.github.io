@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M-CASH</title>
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/reset.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
 </head>
 
@@ -32,27 +32,34 @@
                     </li>
                 </ul>
             </nav>
+        </div>
             <section class="header-contact">
                 <form class="header-contact__form" action="GET">
-                    <fieldset>  
+                    <fieldset>
                         <div class="form-header">
                             <p class="form-header__text-big">Be Smart, Think Smart, Save Money</p>
                             <p class="form-header__text-small">Compare your take-home today</p>
                         </div>
-                        <div class="form-header__content">
-                            <input class="form-header__input-phone" type="text" name="number_phone" id="number_phone"
-                                placeholder="Phone Number">
-                            <input class="form-header__input-date" type="text" name="date" id="date"
-                                placeholder="Day Rate">
-                            <input class="button form-header__button" type="submit" value="Submit">
-                        </div>
+                        <ul class="form-header__list">
+                            <li class="form-header__list-item">
+                                <input class="form-header__input input-phone" type="text" name="number_phone"
+                                    id="number_phone" placeholder="Phone Number">
+                            </li>
+                            <li class="form-header__list-item">
+                                <input class="form-header__input input-date" type="text" name="date" id="date"
+                                    placeholder="Day Rate">
+                            </li>
+                            <li class="form-header__list-item">
+                                <button class="button form-header__button" type="submit">Submit</button>
+                            </li>
+                        </ul>
                     </fieldset>
                 </form>
                 <div class="header-contact__image">
-                    <img src="img/header-contact.png" alt="Save Money" width="520" height="431">
+                    <img src="img/header-contact.png" alt="Save Money" width="520" height="430">
                 </div>
             </section>
-        </div>
+        
     </header>
     <main class="page-main">
         <section class="features">
