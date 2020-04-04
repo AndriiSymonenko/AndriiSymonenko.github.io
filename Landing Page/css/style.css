@@ -59,6 +59,8 @@ input[type="radio"].visually-hidden {
 .button {
     display: inline-block;
     padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 500;
     border: none;
     border-radius: 100px;
     background-color: #3f72af;
@@ -275,7 +277,12 @@ ul {
     font-size: 14px;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 61px;
+}
+
+
+.features {
+    margin-bottom: 100px;
 }
 
 .features__list {
@@ -288,12 +295,91 @@ ul {
 
 .feature__list-item {
     width: 270px;
+    margin-right: 115px;
     text-align: center;
 
+}
+
+.feature__list-item:last-child {
+    margin-right: 0;
+}
+
+
+.features__list__icon {
+    margin-bottom: 30px;
 }
 
 .features__list__header {
     font-family: "PlayfairDisplay", serif;
     font-size: 28px;
     font-weight: 300;
+    margin-bottom: 25px;
+}
+
+.features__list__text {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.how-works {
+    background-color: #f9f7f7;
+    padding: 69px 118px 66px 56px;
+    margin-bottom: 100px;
+}
+
+
+.how-works__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.how-works__list-item {
+    width: 315px;
+}
+
+.how-works__number {
+    font-family: "PlayfairDisplay", serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.how-works__text {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.call-action {
+    width: 756px;
+    height: 393px;
+    margin: 0 auto;
+    background-image: url("../img/cal-to-action_bg.png");
+}
+
+.call-action__window {
+    width: 532px;
+    margin: 0 auto;
+    padding-top: 70px ;
+    padding-bottom: 70px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.call-action__header {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.call-action__text {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 46px;
+}
+
+.call-action__button {
+    background-color: #112d4e;
 }
