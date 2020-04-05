@@ -127,13 +127,21 @@
             </div>
         </section>
         <section class="compare-plans">
-            <h2 class="visyally-hidden">Compare plans</h2>
+            <h2 class="visually-hidden">Compare plans</h2>
             <form class="compare-plans__form" action="GET">
-                <label class="compare-plans__form-label" for="number-employees">Number of employees</label>
-                <input class="compare-plans__form-input" type="text" name="number-employees" id="number-employees">
-                <label class="compare-plans__form-label" for="payroll">For the payroll, I use</label>
-                <input class="compare-plans__form-input" type="text" name="payroll" id="payroll">
-                <input class="button compare-plans__form-button" type="submit" value="Compare plans">
+                <ul class="compare-plans__list">
+                    <li class="compare-plans__item">
+                        <label class="compare-plans__form-label" for="number-employees">Number of employees</label>
+                        <input class="compare-plans__form-input" type="text" name="number-employees" id="number-employees"> 
+                    </li>
+                    <li class="compare-plans__item">
+                        <label class="compare-plans__form-label" for="payroll">For the payroll, I use</label>
+                        <input class="compare-plans__form-input" type="text" name="payroll" id="payroll">
+                    </li>
+                    <li class="compare-plans__item"> 
+                        <a class="button compare-plans__form-button">Compare plans</a>
+                    </li>
+                </ul>
             </form>
         </section>
         <section class="main-price">

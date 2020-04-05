@@ -355,12 +355,14 @@ ul {
     height: 393px;
     margin: 0 auto;
     background-image: url("../img/cal-to-action_bg.png");
+    box-shadow: 0 0 30px 0 rgba(63, 114, 175, 0.5);
+    margin-bottom: 100px;
 }
 
 .call-action__window {
     width: 532px;
     margin: 0 auto;
-    padding-top: 70px ;
+    padding-top: 70px;
     padding-bottom: 70px;
     text-align: center;
     color: #ffffff;
@@ -382,4 +384,57 @@ ul {
 
 .call-action__button {
     background-color: #112d4e;
+}
+
+.compare-plans {
+    background-image: url("../img/compare-plans_bg.png");
+    width: 1280px;
+    height: 222px;
+    margin: 0 auto;
+    color: #ffffff;
+    margin-bottom: 100px;
+}
+
+.compare-plans__list {
+    display: flex;
+    justify-content: center;
+    padding: 60px 90px 60px 90px;
+    
+}
+
+.compare-plans__item {
+    width: 270px;
+    margin-right: 30px;
+}
+
+.compare-plans__item:last-child {
+    margin-right: 0;
+    padding-top: 40px;
+}
+
+.compare-plans__form-label {
+    padding-bottom: 16px;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.compare-plans__form-input {
+    display: inline-block;
+    width: 270px;
+    background-color: #dbe2ef;
+    border: none;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-left: 20px;
+    border-radius: 100px;
+    font-size: 16px;
+    color: #666666;
+}
+
+
+.compare-plans__form-button {
+    width: 270px;
+    background-color: transparent;
+    border: solid 1px #f9f7f7;
+    padding: 16px 71px 16px 71px;
 }
