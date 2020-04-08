@@ -209,7 +209,7 @@ window.addEventListener('DOMContentLoaded', function () {
         daysSum = 0,
         total = 0;
 
-
+k
     totalValue.textContent = 0;
 
     persons.addEventListener('input', function () {
