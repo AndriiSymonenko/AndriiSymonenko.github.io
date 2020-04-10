@@ -516,6 +516,58 @@ ul {
 
 .main-price__button:hover + .main-price__header  {
     background-color:  #112d4e;
-    
 }
 
+.list-option__item {
+    margin-bottom: 25px;
+}
+
+
+
+.partners {
+    width: 1280px;
+    background-color: #f9f7f7;
+    margin: 0 auto;
+    padding-top: 73px;
+}
+
+.partner-list {
+    display: flex;
+    justify-content: space-between;
+    width: 1035px;
+    margin: 0 auto;
+    padding-bottom: 70px;
+}
+
+
+.partner-list__item {
+    margin-right: 70px;
+    position: relative;
+}
+
+.partner-list__item:nth-child(5) {
+    margin-right: 0;
+}
+
+
+
+.partner-list__icon {
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.partner-list__icon:hover {
+    opacity: 1;
+}
+
+.partner-list__icon--color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.partner-list__icon--color:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
