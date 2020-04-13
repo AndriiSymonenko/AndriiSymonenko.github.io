@@ -514,8 +514,8 @@ ul {
     text-align: center;
 }
 
-.main-price__button:hover + .main-price__header  {
-    background-color:  #112d4e;
+.main-price__button:hover+.main-price__header {
+    background-color: #112d4e;
 }
 
 .list-option__item {
@@ -590,7 +590,7 @@ ul {
     margin-right: 30px;
     text-align: center;
     border-radius: 10px;
-}   
+}
 
 .rewiew-list__item-wrapper {
     padding: 40px 41px 40px 41px;
@@ -622,8 +622,8 @@ ul {
 .faq-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; 
-    margin-bottom: 51px; 
+    justify-content: center;
+    margin-bottom: 51px;
 }
 
 .faq-list__item {
@@ -647,5 +647,130 @@ ul {
 }
 
 .faq-button {
-   justify-content: center;
+    justify-content: center;
+    width: 200px;
+}
+
+.contact {
+    position: relative;
+    width: 1280px;
+    background-image: url("/img/map-stub-temp.png");
+    height: 500px;
+    margin: 0 auto;
+}
+
+.contact__window {
+    position: absolute;
+    top: 50px;
+    left: 255px;
+    width: 270px;
+    background-color: #ffffff;
+    padding: 60px 86px 60px 32px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+.contact__window-header {
+    margin-bottom: 50px;
+    font-size: 26px;
+}
+
+.contact__window-list__item {
+    margin-bottom: 30px;
+}
+
+.contact__window-list__item:last-child {
+    margin-bottom: 0;
+}
+
+
+.main-footer {
+    width: 1280px;
+    background-color: #112d4e;
+    color: #ffffff;
+    margin: 0 auto;
+}
+
+
+.main-footer a {
+    color: #ffffff;
+}
+
+
+.main-footer li {
+    margin-bottom: 9px;
+}
+
+
+.main-footer__header {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.main-footer__wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 71px;
+    padding-left: 55px;
+    padding-right: 55px;
+    margin-bottom: 78px;
+}
+
+
+.main-footer__wrapper::after {
+    position: absolute;
+    content: "";
+    width: 1170px;
+    height: 1px;
+    background-color:#ffffff;
+    top: 300px;
+    opacity: 0.3;
+
+}
+
+.main-footer__logo-image {
+    margin-bottom: 20px;
+}
+
+.main-footer-text {
+    width: 367px;
+}
+
+.main-footer__documents {
+    width: 146px;
+}
+
+.main-footer__menu {
+    width: 75px;
+}
+
+.main-footer__about-company {
+    width: 175px;
+}
+
+.main-footer__social-footer {
+    width: 80px;
+}
+
+.social-footer__list {
+    display: flex;
+}
+
+.social-footer__list-item:first-child {
+    margin-right: 20px;
+}
+.main-footer__social-header {
+    text-align: center;
+    margin-bottom: 27px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.main-footre__address{
+    text-align: center;
+    padding-bottom: 30px;
 }
