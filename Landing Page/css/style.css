@@ -118,14 +118,16 @@ ul {
     margin-bottom: 23px;
 }
 
-.main-header__logo {
-    width: 200px;
+.main-header__logo-wrapper {
+    width: 20%;
+    margin-right: 0;
+    justify-self: start;
 }
 
 .site-list {
     display: flex;
     justify-content: flex-end;
-    width: 800px;
+    width: 70%;
     padding-top: 10px;
 }
 
@@ -654,7 +656,7 @@ ul {
 .contact {
     position: relative;
     width: 1280px;
-    background-image: url("/img/map-stub-temp.png");
+    background-image: url("../img/map-stub-temp.png");
     height: 500px;
     margin: 0 auto;
 }
@@ -726,7 +728,7 @@ ul {
     content: "";
     width: 1170px;
     height: 1px;
-    background-color:#ffffff;
+    background-color: #ffffff;
     top: 300px;
     opacity: 0.3;
 
@@ -763,6 +765,7 @@ ul {
 .social-footer__list-item:first-child {
     margin-right: 20px;
 }
+
 .main-footer__social-header {
     text-align: center;
     margin-bottom: 27px;
@@ -770,7 +773,45 @@ ul {
     font-weight: 500;
 }
 
-.main-footre__address{
+.main-footre__address {
     text-align: center;
     padding-bottom: 30px;
+}
+
+
+@media (max-width: 768px) {
+
+
+    .site-list {
+        width: 40%;
+        font-size: 25px;
+    }
+
+    .contact-us-list {
+        width: 50%;
+    }
+
+    .contact-us-list__button {
+        font-size: 25px;
+    }
+
+    .features__list__text {
+        font-size: 20px;
+    }
+
+    .how-works__text {
+        font-size: 20px;
+    }
+
+    .call-action__text {
+        font-size: 20px;
+    }
+
+    .main-footer {
+        font-size: 20px;
+    }
+
+    .main-footer__wrapper::after {
+        top: 350px
+    }
 }
