@@ -795,23 +795,92 @@ ul {
         font-size: 25px;
     }
 
-    .features__list__text {
+    .features__list__text,
+    .how-works__text,
+    .call-action__text,
+    .main-footer,
+    .compare-plans__form-label,
+    .list-option__item,
+    .rewiew-list__item-text,
+    .faq-list__item-text {
         font-size: 20px;
     }
 
-    .how-works__text {
-        font-size: 20px;
-    }
-
-    .call-action__text {
-        font-size: 20px;
-    }
-
-    .main-footer {
-        font-size: 20px;
+    .faq-list__item-header {
+        font-size: 25px;
     }
 
     .main-footer__wrapper::after {
         top: 350px
+    }
+
+    .compare-plans__form-label {
+        font-size: 20px;
+    }
+
+
+}
+
+
+@media (max-width: 375px) {
+    .main-navigation {
+        flex-wrap: wrap;
+        margin-bottom: 100px;
+    }
+
+    .main-header__logo-wrapper {
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-header__logo-image {
+        width: 398px;
+        height: 102px;
+        margin-bottom: 40px;
+    }
+
+    .site-list {
+        font-size: 45px;
+        padding-top: 25px;
+    }
+
+    .contact-us-list__button {
+        font-size: 45px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .header-contact__form {
+        width: 100%;
+    }
+
+    .form-header {
+        width: 100%;
+    }
+
+    .form-header__text-big {
+        font-size: 70px;
+        margin-bottom: 20px;
+    }
+
+    .form-header__text-small {
+        font-size: 50px;
+    }
+
+    .header-contact__image {
+        display: none;
+    }
+
+    .form-header__list {
+        width: 100%;
+    }
+
+    .form-header__list-item {
+        width: 100%;
+    }
+
+    .input-phone,
+    .input-date {
+        width: 100%;
     }
 }
