@@ -879,8 +879,35 @@ ul {
         width: 100%;
     }
 
-    .input-phone,
+    .input-phone {
+        width: 100%;
+    }
+
     .input-date {
         width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .form-header__button {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .feature {
+      
+    }
+    .features__list {
+        flex-direction: column;
+    }
+
+
+    .feature__list-item {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .features__list__text {
+        font-size: 25px;
     }
 }
