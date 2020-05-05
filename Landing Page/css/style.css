@@ -893,10 +893,7 @@ ul {
         margin-left: 0;
     }
 
-    .feature {
-      
-    }
-    .features__list {
+      .features__list {
         flex-direction: column;
     }
 
@@ -910,4 +907,56 @@ ul {
     .features__list__text {
         font-size: 25px;
     }
+
+    .how-works__list {
+        flex-direction: column;
+    }
+
+    .how-works__list-item {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .how-works__text {
+        font-size: 25px;
+    }
+
+    .call-action {
+        width: 100%;
+    }
+    .call-action__text {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+
+
+/* Do compare-plans */
+
+
+
+    .main-price {
+        width: 100%;
+       
+    }
+
+    .main-price__list {
+        flex-direction: column;
+    }
+
+    .main-price__list-item {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .main-price__button {
+        left: 37%;
+    }
+    
+    .list-option__item {
+        font-size: 25px;
+    }
+
 }
