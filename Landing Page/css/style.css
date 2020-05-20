@@ -879,6 +879,11 @@ ul {
         width: 100%;
     }
 
+    .form-header__list-item .input-phone,
+     .input-date {
+        font-size: 30px;
+    }
+
     .input-phone {
         width: 100%;
     }
@@ -891,6 +896,7 @@ ul {
     .form-header__button {
         width: 100%;
         margin-left: 0;
+        font-size: 30px;
     }
 
       .features__list {
@@ -905,11 +911,14 @@ ul {
     }
 
     .features__list__text {
-        font-size: 25px;
+        font-size: 30px;
+        line-height: 30px;
     }
 
     .how-works__list {
         flex-direction: column;
+        font-size: 30px;
+        line-height: 30px;
     }
 
     .how-works__list-item {
@@ -925,15 +934,43 @@ ul {
 
     .call-action {
         width: 100%;
+        background-image: none;
+        background-color: #3f72af;
     }
     .call-action__text {
-        font-size: 25px;
+        font-size: 30px;
+        line-height: 30px;
         margin-bottom: 20px;
     }
 
 
+    .call-action__button {
+        width: 100%;
+        font-size: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
 
-/* Do compare-plans */
+
+
+    .compare-plans {
+        margin-bottom: 250px;
+        width: 100%;
+    }
+
+    .compare-plans__list {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        background-image: none;
+        background-color: #3f72af;
+        
+    }
+
+
+    .compare-plans__list input {
+        width: 100%;
+    }
 
 
 
