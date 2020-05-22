@@ -803,7 +803,7 @@ ul {
     .list-option__item,
     .rewiew-list__item-text,
     .faq-list__item-text {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .faq-list__item-header {
@@ -822,7 +822,7 @@ ul {
 }
 
 
-@media (max-width: 375px) {
+@media (max-width: 425px) {
     .main-navigation {
         flex-wrap: wrap;
         margin-bottom: 100px;
@@ -972,8 +972,6 @@ ul {
         width: 100%;
     }
 
-
-
     .main-price {
         width: 100%;
        
@@ -996,4 +994,34 @@ ul {
         font-size: 25px;
     }
 
+    .partners {
+        width: 100%;
+    }
+
+    .partner-list {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .partner-list__item {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+
+    .rewiew-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rewiew-list__item {
+        width: 80%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .rewiew-list__item-text {
+        width: 60%;
+    }
 }
